@@ -36,6 +36,14 @@ mosdepth -t 20 --fast-mode TRINITY_DN7047_c0_g2_i1.depth TRINITY_DN7047_c0_g2_i1
 mosdepth -t 20 --fast-mode TRINITY_DN12393_c0_g1_i1.depth TRINITY_DN12393_c0_g1_i1.bam
 mosdepth -t 20 --fast-mode TRINITY_DN55899_c0_g1_i1.depth TRINITY_DN55899_c0_g1_i1.bam
 mosdepth -t 20 --fast-mode TRINITY_DN8130_c0_g1_i1.depth TRINITY_DN8130_c0_g1_i1.bam
+awk '{for(i=$2;i<$3;i++){ print $1,i,i+1,$4 } }' TRINITY_DN55899_c0_g1_i1.depth.per-base.bed | awk '{print$1, $3, $4}' > TRINITY_DN55899_c0_g1_i1.depth.list
+awk '{for(i=$2;i<$3;i++){ print $1,i,i+1,$4 } }' TRINITY_DN7047_c0_g2_i1.depth.per-base.bed | awk '{print$1, $3, $4}' > TRINITY_DN7047_c0_g2_i1.depth.list
+awk '{for(i=$2;i<$3;i++){ print $1,i,i+1,$4 } }' TRINITY_DN8130_c0_g1_i1.depth.per-base.bed | awk '{print$1, $3, $4}' > TRINITY_DN8130_c0_g1_i1.depth.list
+awk '{for(i=$2;i<$3;i++){ print $1,i,i+1,$4 } }' TRINITY_DN12393_c0_g1_i1.depth.per-base.bed |  awk '{print$1, $3, $4}' > TRINITY_DN12393_c0_g1_i1.depth.list
+awk '{ sum += $3 } END { if (NR > 0) print sum / NR }' TRINITY_DN12393_c0_g1_i1.depth.list > TRINITY_DN12393_c0_g1_i1.final.depth
+awk '{ sum += $3 } END { if (NR > 0) print sum / NR }'  TRINITY_DN55899_c0_g1_i1.depth.list >  TRINITY_DN55899_c0_g1_i1.final.depth
+awk '{ sum += $3 } END { if (NR > 0) print sum / NR }'  TRINITY_DN8130_c0_g1_i1.depth.list >  TRINITY_DN8130_c0_g1_i1.final.depth
+awk '{ sum += $3 } END { if (NR > 0) print sum / NR }' TRINITY_DN7047_c0_g2_i1.depth.list > TRINITY_DN7047_c0_g2_i1.final.depth
 ```
 Cutadapt(version 4.9) played a role in the removal of adapter sequences and low-quality reads from raw data The sequence "AGATCGGAAGAGCACACGTCT" is the 3' end adapter sequence.
 ```
@@ -52,28 +60,6 @@ conda activate /share/home/zhenghanze/miniconda3/envs/samtools
 samtools view -S -b -F 4 Morus_siRNA.sam > Morus_siRNA.bam
 samtools sort Morus_siRNA.bam -o Morus_siRNA.sort.bam -@ 20
 samtools index Morus_siRNA.sort.bam
-samtools view -b Morus.sort.bam TRINITY_DN7047_c0_g2_i1_reverse_strand > TRINITY_DN7047_c0_g2_i1.bam
-samtools view -b Morus.sort.bam TRINITY_DN12393_c0_g1_i1 > TRINITY_DN12393_c0_g1_i1.bam
-samtools view -b Morus.sort.bam TRINITY_DN55899_c0_g1_i1_reverse_strand > TRINITY_DN55899_c0_g1_i1.bam
-samtools view -b Morus.sort.bam TRINITY_DN8130_c0_g1_i1 > TRINITY_DN8130_c0_g1_i1.bam
-samtools index TRINITY_DN7047_c0_g2_i1.bam
-samtools index TRINITY_DN12393_c0_g1_i1.bam
-samtools index TRINITY_DN55899_c0_g1_i1.bam
-samtools index TRINITY_DN8130_c0_g1_i1.bam
-source /share/home/zhenghanze/miniconda3/etc/profile.d/conda.sh
-conda activate /share/home/zhenghanze/miniconda3/envs/mosdepth
-mosdepth -t 20 --fast-mode TRINITY_DN7047_c0_g2_i1.depth TRINITY_DN7047_c0_g2_i1.bam
-mosdepth -t 20 --fast-mode TRINITY_DN12393_c0_g1_i1.depth TRINITY_DN12393_c0_g1_i1.bam
-mosdepth -t 20 --fast-mode TRINITY_DN55899_c0_g1_i1.depth TRINITY_DN55899_c0_g1_i1.bam
-mosdepth -t 20 --fast-mode TRINITY_DN8130_c0_g1_i1.depth TRINITY_DN8130_c0_g1_i1.bam
-awk '{for(i=$2;i<$3;i++){ print $1,i,i+1,$4 } }' TRINITY_DN55899_c0_g1_i1.depth.per-base.bed | awk '{print$1, $3, $4}' > TRINITY_DN55899_c0_g1_i1.depth.list
-awk '{for(i=$2;i<$3;i++){ print $1,i,i+1,$4 } }' TRINITY_DN7047_c0_g2_i1.depth.per-base.bed | awk '{print$1, $3, $4}' > TRINITY_DN7047_c0_g2_i1.depth.list
-awk '{for(i=$2;i<$3;i++){ print $1,i,i+1,$4 } }' TRINITY_DN8130_c0_g1_i1.depth.per-base.bed | awk '{print$1, $3, $4}' > TRINITY_DN8130_c0_g1_i1.depth.list
-awk '{for(i=$2;i<$3;i++){ print $1,i,i+1,$4 } }' TRINITY_DN12393_c0_g1_i1.depth.per-base.bed |  awk '{print$1, $3, $4}' > TRINITY_DN12393_c0_g1_i1.depth.list
-awk '{ sum += $3 } END { if (NR > 0) print sum / NR }' TRINITY_DN12393_c0_g1_i1.depth.list > TRINITY_DN12393_c0_g1_i1.final.depth
-awk '{ sum += $3 } END { if (NR > 0) print sum / NR }'  TRINITY_DN55899_c0_g1_i1.depth.list >  TRINITY_DN55899_c0_g1_i1.final.depth
-awk '{ sum += $3 } END { if (NR > 0) print sum / NR }'  TRINITY_DN8130_c0_g1_i1.depth.list >  TRINITY_DN8130_c0_g1_i1.final.depth
-awk '{ sum += $3 } END { if (NR > 0) print sum / NR }' TRINITY_DN7047_c0_g2_i1.depth.list > TRINITY_DN7047_c0_g2_i1.final.depth
 ```
 USing SAMtools(version 1.6) and mosdepth(version 0.3.6) to calculate siRNA depth corresponding to the genome.
 ```
@@ -101,7 +87,6 @@ awk '{ sum += $3 } END { if (NR > 0) print sum / NR }' TRINITY_DN12393_c0_g1_i1_
 awk '{ sum += $3 } END { if (NR > 0) print sum / NR }' TRINITY_DN55899_c0_g1_i1_siRNA.depth.list > TRINITY_DN55899_c0_g1_i1_siRNA.final.depth
 awk '{ sum += $3 } END { if (NR > 0) print sum / NR }'  TRINITY_DN7047_c0_g2_i1_siRNA.depth.list >  TRINITY_DN7047_c0_g2_i1_siRNA.final.depth
 awk '{ sum += $3 } END { if (NR > 0) print sum / NR }'  TRINITY_DN8130_c0_g1_i1_siRNA.depth.list >  TRINITY_DN8130_c0_g1_i1_siRNA.final.depth
-
 ```
 Step3 Phylogenetic analysis
 The phylogenetic analysis hinged on the amino acid sequences of the predicted large protein (L), nucleocapsid protein (N) and putative viral movement protein (M).The relevant protein data can download from https://ictv.global/report/chapter/phenuiviridae/phenuiviridae .
