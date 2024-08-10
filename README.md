@@ -88,7 +88,9 @@ awk '{ sum += $3 } END { if (NR > 0) print sum / NR }' TRINITY_DN55899_c0_g1_i1_
 awk '{ sum += $3 } END { if (NR > 0) print sum / NR }'  TRINITY_DN7047_c0_g2_i1_siRNA.depth.list >  TRINITY_DN7047_c0_g2_i1_siRNA.final.depth
 awk '{ sum += $3 } END { if (NR > 0) print sum / NR }'  TRINITY_DN8130_c0_g1_i1_siRNA.depth.list >  TRINITY_DN8130_c0_g1_i1_siRNA.final.depth
 ```
-Step3 Phylogenetic analysis
+## Step3 tblastn
+Using tblastn(version 2.16.0) to align the genome sequence as same genus as the new virus downloaded from https://ictv.global/report/chapter/phenuiviridae/phenuiviridae/rubodvirus back to the assembly result of Trinity(version 2.15.1)
+## Step4 Phylogenetic analysis
 The phylogenetic analysis hinged on the amino acid sequences of the predicted large protein (L), nucleocapsid protein (N) and putative viral movement protein (M).The relevant protein data can download from https://ictv.global/report/chapter/phenuiviridae/phenuiviridae .
 ```
 source /share/home/zhenghanze/miniconda3/etc/profile.d/conda.sh
