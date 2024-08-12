@@ -1,0 +1,671 @@
+IQ-TREE 2.3.5 built Jul 22 2024
+
+Input file name: merged_ORF_N.mafft.trimal.fasta
+Type of analysis: ModelFinder + tree reconstruction + non-parametric bootstrap (1000 replicates)
+Random seed number: 352728
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 86 sequences with 205 amino-acid sites
+Number of constant sites: 1 (= 0.487805% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1 (= 0.487805% of all sites)
+Number of parsimony informative sites: 200
+Number of distinct site patterns: 205
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.pfam+F+I+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+Q.pfam+F+I+R4    -27453.843   55297.686 +    0.311   63791.019 -        0   55945.673 +    0.668
+Q.pfam+F+R5      -27452.056   55296.111 +    0.684   64949.111 -        0   55947.421 +    0.279
+Q.pfam+F+R4      -27459.044   55306.088 -  0.00466   62872.088 -        0   55950.752 +   0.0527
+LG+F+I+R4        -27461.100   55312.201 - 0.000219   63805.534 -        0   55960.188 - 0.000471
+LG+F+R4          -27468.467   55324.935 - 3.77e-07   62890.935 -        0   55969.599 - 4.26e-06
+LG+F+R5          -27464.160   55320.319 - 3.79e-06   64973.319 -        0   55971.629 - 1.54e-06
+Q.yeast+F+R5     -27471.109   55334.219 - 3.63e-09   64987.219 -        0   55985.529 - 1.48e-09
+Q.yeast+F+I+R4   -27479.304   55348.607 - 2.73e-12   63841.941 -        0   55996.594 - 5.85e-12
+Q.yeast+F+R4     -27485.997   55359.994 - 9.18e-15   62925.994 -        0   56004.658 - 1.04e-13
+Q.yeast+R5       -27540.788   55435.576 - 3.55e-31   57769.353 - 1.39e-122   56023.748 - 7.43e-18
+LG+I+R4          -27546.846   55445.692 - 2.26e-33   57670.835 - 3.44e-101   56030.542 - 2.49e-19
+Q.pfam+I+R4      -27549.565   55451.131 - 1.49e-34   57676.274 - 2.27e-102   56035.981 - 1.64e-20
+Q.pfam+R5        -27548.209   55450.418 - 2.13e-34   57784.196 - 8.33e-126   56038.591 - 4.44e-21
+LG+R4            -27553.646   55457.293 - 6.84e-36   57581.431 - 8.92e-82   56038.820 - 3.96e-21
+LG+R5            -27548.717   55451.434 - 1.28e-34   57785.212 - 5.01e-126   56039.607 - 2.67e-21
+Q.pfam+R4        -27554.346   55458.692 -  3.4e-36   57582.830 - 4.43e-82   56040.219 - 1.97e-21
+LG+I+R5          -27546.848   55449.697 - 3.05e-34   57900.620 - 4.36e-151   56041.193 - 1.21e-21
+Q.yeast+I+R4     -27552.970   55457.941 - 4.94e-36   57683.084 - 7.53e-104   56042.791 - 5.44e-22
+LG+I+G4          -27567.544   55477.089 - 3.44e-40   57259.634 - 6.73e-12   56045.323 - 1.53e-22
+Q.yeast+R4       -27557.727   55465.454 - 1.16e-37   57589.592 - 1.51e-83   56046.981 -  6.7e-23
+LG+G4            -27579.092   55498.184 - 9.02e-45   57208.184 +        1   56063.096 - 2.12e-26
+LG+I+R3          -27580.470   55508.941 - 4.17e-47   57538.941 -  1.5e-72   56087.144 - 1.27e-31
+rtREV+F+R5       -27522.257   55436.515 - 2.22e-31   65089.515 -        0   56087.825 - 9.06e-32
+rtREV+F+I+R4     -27528.604   55447.208 - 1.06e-33   63940.541 -        0   56095.195 - 2.27e-33
+rtREV+F+R4       -27534.630   55457.260 - 6.95e-36   63023.260 -        0   56101.924 - 7.86e-35
+LG+R3            -27596.877   55539.754 - 8.48e-54   57481.819 - 3.81e-60   56114.635 - 1.37e-37
+Q.insect+F+R5    -27551.444   55494.888 - 4.69e-44   65147.888 -        0   56146.198 - 1.91e-44
+Q.insect+R5      -27603.559   55561.118 - 1.95e-58   57894.895 - 7.63e-150   56149.290 - 4.07e-45
+Q.insect+F+I+R4  -27561.272   55512.545 - 6.87e-48   64005.878 -        0   56160.532 - 1.47e-47
+Q.insect+F+R4    -27566.637   55521.275 - 8.74e-50   63087.275 -        0   56165.939 - 9.88e-49
+Q.insect+I+R4    -27616.242   55584.483 - 1.64e-63   57809.626 - 2.5e-131   56169.333 - 1.81e-49
+Q.insect+R4      -27620.724   55591.447 - 5.05e-65   57715.585 - 6.59e-111   56172.974 - 2.93e-50
+LG+I+R2          -27646.065   55636.130 -    1e-74   57495.880 - 3.37e-63   56207.688 - 8.49e-58
+WAG+F+I+R4       -27587.354   55564.707 - 3.24e-59   64058.040 -        0   56212.694 - 6.95e-59
+WAG+F+R5         -27586.806   55565.613 - 2.06e-59   65218.613 -        0   56216.923 - 8.39e-60
+WAG+F+R4         -27594.078   55576.156 - 1.06e-61   63142.156 -        0   56220.820 - 1.19e-60
+LG+R2            -27665.804   55673.607 - 7.29e-83   57456.153 - 1.43e-54   56241.842 - 3.25e-65
+VT+F+R5          -27613.749   55619.498 -  4.1e-71   65272.498 -        0   56270.808 - 1.67e-71
+VT+F+I+R4        -27618.086   55626.171 - 1.46e-72   64119.504 -        0   56274.158 - 3.13e-72
+VT+F+R4          -27621.694   55631.387 - 1.07e-73   63197.387 -        0   56276.051 - 1.21e-72
+WAG+I+R4         -27705.103   55762.206 - 4.2e-102   57987.349 - 6.4e-170   56347.056 - 4.63e-88
+WAG+R5           -27703.050   55760.100 - 1.21e-101   58093.877 - 4.72e-193   56348.272 - 2.52e-88
+WAG+R4           -27711.289   55772.578 - 2.35e-104   57896.716 - 3.07e-150   56354.105 - 1.36e-89
+VT+R5            -27724.324   55802.649 - 6.95e-111   58136.427 - 2.72e-202   56390.822 - 1.45e-97
+VT+I+R4          -27727.951   55807.901 - 5.03e-112   58033.044 - 7.65e-180   56392.751 - 5.53e-98
+VT+R4            -27730.930   55811.861 - 6.94e-113   57935.999 - 9.06e-159   56393.388 - 4.02e-98
+Blosum62+F+R5    -27730.405   55852.810 - 8.9e-122   65505.810 -        0   56504.120 - 3.63e-122
+Blosum62+F+I+R4  -27735.248   55860.496 - 1.91e-123   64353.829 -        0   56508.483 - 4.09e-123
+Blosum62+F+R4    -27738.912   55865.824 - 1.33e-124   63431.824 -        0   56510.488 - 1.5e-123
+JTTDCMut+F+R5    -27740.924   55873.849 - 2.4e-126   65526.849 -        0   56525.159 - 9.79e-127
+JTT+F+R5         -27743.188   55878.375 - 2.5e-127   65531.375 -        0   56529.685 - 1.02e-127
+JTTDCMut+F+I+R4  -27755.018   55900.035 - 4.95e-132   64393.368 -        0   56548.022 - 1.06e-131
+JTTDCMut+F+R4    -27759.351   55906.703 - 1.76e-133   63472.703 -        0   56551.367 -   2e-132
+JTT+F+I+R4       -27757.037   55904.075 - 6.57e-133   64397.408 -        0   56552.062 - 1.41e-132
+JTT+F+R4         -27760.494   55908.987 - 5.63e-134   63474.987 -        0   56553.651 - 6.37e-133
+DCMut+F+R5       -27756.991   55905.983 - 2.53e-133   65558.983 -        0   56557.293 - 1.03e-133
+Dayhoff+F+R5     -27757.071   55906.142 - 2.34e-133   65559.142 -        0   56557.452 - 9.52e-134
+Blosum62+R5      -27815.468   55984.936 - 1.81e-150   58318.714 - 7.1e-242   56573.109 - 3.79e-137
+PMB+F+R5         -27765.298   55922.596 - 6.24e-137   65575.596 -        0   56573.906 - 2.54e-137
+PMB+F+I+R4       -27768.003   55926.006 - 1.14e-137   64419.339 -        0   56573.993 - 2.44e-137
+Dayhoff+F+R4     -27771.327   55930.654 - 1.11e-138   63496.654 -        0   56575.318 - 1.26e-137
+Blosum62+I+R4    -27819.910   55991.820 - 5.8e-152   58216.963 - 8.84e-220   56576.670 - 6.39e-138
+PMB+F+R4         -27772.029   55932.057 - 5.51e-139   63498.057 -        0   56576.721 - 6.23e-138
+DCMut+F+R4       -27772.083   55932.167 - 5.21e-139   63498.167 -        0   56576.831 - 5.9e-138
+Blosum62+R4      -27822.788   55995.576 - 8.87e-153   58119.714 - 1.16e-198   56577.103 - 5.15e-138
+DCMut+F+I+R4     -27770.259   55930.518 - 1.19e-138   64423.852 -        0   56578.505 - 2.55e-138
+Dayhoff+F+I+R4   -27770.473   55930.947 - 9.6e-139   64424.280 -        0   56578.934 - 2.06e-138
+rtREV+R5         -27820.627   55995.255 - 1.04e-152   58329.033 - 4.08e-244   56583.428 - 2.18e-139
+rtREV+I+R4       -27825.311   56002.622 - 2.62e-154   58227.764 - 3.99e-222   56587.471 - 2.88e-140
+rtREV+R4         -27831.028   56012.056 - 2.34e-156   58136.194 - 3.06e-202   56593.583 - 1.36e-141
+Q.plant+F+R5     -27796.699   55985.397 - 1.44e-150   65638.397 -        0   56636.707 - 5.87e-151
+Q.plant+F+I+R4   -27803.224   55996.448 - 5.74e-153   64489.781 -        0   56644.435 - 1.23e-152
+Q.plant+F+R4     -27809.276   56006.552 - 3.67e-155   63572.552 -        0   56651.216 - 4.15e-154
+cpREV+F+R5       -27828.575   56049.151 - 2.06e-164   65702.151 -        0   56700.461 - 8.41e-165
+cpREV+F+R4       -27837.313   56062.626 - 2.45e-167   63628.626 -        0   56707.290 - 2.77e-166
+cpREV+F+I+R4     -27838.412   56066.824 -   3e-168   64560.157 -        0   56714.811 - 6.44e-168
+PMB+I+R4         -27895.827   56143.654 - 6.21e-185   58368.797 - 9.46e-253   56728.504 - 6.84e-171
+PMB+R5           -27893.393   56140.786 - 2.61e-184   58474.564 - 1.02e-275   56728.959 - 5.45e-171
+PMB+R4           -27898.882   56147.763 - 7.96e-186   58271.901 - 1.04e-231   56729.290 - 4.62e-171
+Q.plant+R5       -27913.720   56181.440 - 3.88e-193   58515.217 - 1.52e-284   56769.612 - 8.1e-180
+Q.plant+I+R4     -27922.538   56197.076 - 1.56e-196   58422.219 - 2.37e-264   56781.926 - 1.72e-182
+Q.plant+R4       -27927.623   56205.246 - 2.62e-198   58329.384 - 3.42e-244   56786.772 - 1.52e-183
+JTTDCMut+R5      -27927.872   56209.745 - 2.77e-199   58543.522 - 1.08e-290   56797.917 - 5.78e-186
+JTT+R5           -27931.014   56216.029 - 1.2e-200   58549.806 - 4.68e-292   56804.201 - 2.5e-187
+cpREV+R5         -27937.030   56228.060 - 2.92e-203   58561.838 - 1.14e-294   56816.233 - 6.1e-190
+JTTDCMut+I+R4    -27940.104   56232.208 - 3.66e-204   58457.351 - 5.58e-272   56817.058 - 4.04e-190
+cpREV+R4         -27944.250   56238.501 - 1.58e-205   58362.639 - 2.06e-251   56820.028 - 9.14e-191
+JTTDCMut+R4      -27944.269   56238.539 - 1.55e-205   58362.677 - 2.02e-251   56820.065 - 8.97e-191
+JTT+I+R4         -27942.094   56236.189 - 5.01e-205   58461.332 - 7.63e-273   56821.039 - 5.51e-191
+JTT+R4           -27946.784   56243.568 - 1.25e-206   58367.706 - 1.63e-252   56825.095 - 7.26e-192
+cpREV+I+R4       -27945.666   56243.333 - 1.41e-206   58468.476 - 2.14e-274   56828.183 - 1.55e-192
+mtInv+F+R5       -27938.211   56268.421 - 5.02e-212   65921.421 -        0   56919.731 - 2.05e-212
+mtInv+F+R4       -27951.210   56290.421 - 8.38e-217   63856.421 -        0   56935.085 - 9.48e-216
+mtInv+F+I+R4     -27949.045   56288.090 - 2.69e-216   64781.424 -        0   56936.077 - 5.77e-216
+DCMut+R5         -28011.950   56377.899 - 8.47e-236   58711.677 -        0   56966.072 - 1.77e-222
+Dayhoff+R5       -28012.949   56379.897 - 3.12e-236   58713.675 -        0   56968.070 - 6.52e-223
+Dayhoff+R4       -28021.922   56393.844 - 2.92e-239   58517.982 - 3.81e-285   56975.371 - 1.69e-224
+DCMut+R4         -28022.857   56395.715 - 1.15e-239   58519.853 - 1.5e-285   56977.242 - 6.64e-225
+DCMut+I+R4       -28020.673   56393.346 - 3.75e-239   58618.488 - 5.71e-307   56978.195 - 4.12e-225
+Dayhoff+I+R4     -28024.745   56401.489 - 6.39e-241   58626.632 - 9.73e-309   56986.339 - 7.03e-227
+mtZOA+F+R5       -28006.883   56405.767 - 7.52e-242   66058.767 -        0   57057.076 - 3.07e-242
+mtZOA+F+R4       -28023.536   56435.071 - 3.26e-248   64001.071 -        0   57079.735 - 3.68e-247
+mtZOA+F+I+R4     -28021.655   56433.310 - 7.86e-248   64926.643 -        0   57081.297 - 1.69e-247
+Q.mammal+F+R5    -28059.805   56511.610 - 7.81e-265   66164.610 -        0   57162.920 - 3.18e-265
+Q.mammal+F+I+R4  -28069.426   56528.852 - 1.41e-268   65022.185 -        0   57176.839 - 3.02e-268
+Q.mammal+F+R4    -28074.473   56536.945 - 2.46e-270   64102.945 -        0   57181.609 - 2.78e-269
+FLU+F+I+R4       -28080.349   56550.699 - 2.54e-273   65044.032 -        0   57198.685 - 5.45e-273
+FLU+F+R5         -28080.102   56552.205 - 1.2e-273   66205.205 -        0   57203.515 - 4.87e-274
+FLU+F+R4         -28088.575   56565.150 - 1.85e-276   64131.150 -        0   57209.814 - 2.09e-275
+LG+I             -28152.969   56645.938 - 5.29e-294   58355.938 - 5.87e-250   57210.850 - 1.24e-275
+LG               -28191.519   56721.037 - 2.61e-310   58362.752 - 1.94e-251   57282.626 - 3.23e-291
+mtMet+F+R5       -28132.999   56657.998 - 1.27e-296   66310.998 -        0   57309.308 - 5.19e-297
+mtMet+F+R4       -28151.106   56690.212 - 1.29e-303   64256.212 -        0   57334.876 - 1.46e-302
+mtMet+F+I+R4     -28149.603   56689.205 - 2.13e-303   65182.539 -        0   57337.192 - 4.57e-303
+HIVb+F+R5        -28163.526   56719.051 - 7.04e-310   66372.051 -        0   57370.361 - 2.87e-310
+HIVb+F+I+R4      -28178.098   56746.196 - 8.97e-316   65239.530 -        0   57394.183 - 1.93e-315
+HIVb+F+R4        -28183.770   56755.540 - 8.4e-318   64321.540 -        0   57400.204 - 9.49e-317
+mtREV+F+R5       -28206.972   56805.943 -        0   66458.943 -        0   57457.253 -        0
+mtREV+F+R4       -28219.172   56826.344 -        0   64392.344 -        0   57471.008 -        0
+mtREV+F+I+R4     -28218.918   56827.836 -        0   65321.169 -        0   57475.823 -        0
+Q.bird+F+R5      -28273.053   56938.107 -        0   66591.107 -        0   57589.416 -        0
+mtART+F+R5       -28280.109   56952.219 -        0   66605.219 -        0   57603.529 -        0
+FLU+I+R4         -28335.801   57023.602 -        0   59248.745 -        0   57608.452 -        0
+FLU+R5           -28333.195   57020.390 -        0   59354.168 -        0   57608.563 -        0
+Q.bird+F+I+R4    -28285.947   56961.895 -        0   65455.228 -        0   57609.882 -        0
+FLU+R4           -28340.114   57030.228 -        0   59154.366 -        0   57611.754 -        0
+Q.bird+F+R4      -28291.351   56970.701 -        0   64536.701 -        0   57615.365 -        0
+mtART+F+R4       -28297.711   56983.422 -        0   64549.422 -        0   57628.086 -        0
+mtART+F+I+R4     -28297.775   56985.549 -        0   65478.882 -        0   57633.536 -        0
+Q.mammal+R5      -28351.660   57057.320 -        0   59391.098 -        0   57645.493 -        0
+Q.mammal+I+R4    -28359.769   57071.538 -        0   59296.681 -        0   57656.388 -        0
+Q.mammal+R4      -28365.802   57081.603 -        0   59205.741 -        0   57663.130 -        0
+HIVb+R5          -28446.134   57246.269 -        0   59580.046 -        0   57834.441 -        0
+HIVb+I+R4        -28458.170   57268.340 -        0   59493.483 -        0   57853.190 -        0
+HIVb+R4          -28461.297   57272.593 -        0   59396.731 -        0   57854.120 -        0
+mtVer+F+R5       -28451.029   57294.057 -        0   66947.057 -        0   57945.367 -        0
+mtVer+F+R4       -28474.458   57336.917 -        0   64902.917 -        0   57981.581 -        0
+mtVer+F+I+R4     -28473.253   57336.505 -        0   65829.838 -        0   57984.492 -        0
+Q.bird+R5        -28537.366   57428.732 -        0   59762.510 -        0   58016.905 -        0
+Q.bird+I+R4      -28546.213   57444.426 -        0   59669.569 -        0   58029.276 -        0
+Q.bird+R4        -28552.960   57455.920 -        0   59580.058 -        0   58037.447 -        0
+mtZOA+R5         -28730.018   57814.036 -        0   60147.813 -        0   58402.208 -        0
+mtZOA+R4         -28746.922   57843.844 -        0   59967.982 -        0   58425.371 -        0
+mtZOA+I+R4       -28746.842   57845.684 -        0   60070.827 -        0   58430.534 -        0
+mtMAM+F+R5       -28747.582   57887.163 -        0   67540.163 -        0   58538.473 -        0
+FLAVI+F+R5       -28753.625   57899.250 -        0   67552.250 -        0   58550.560 -        0
+mtMAM+F+R4       -28777.493   57942.985 -        0   65508.985 -        0   58587.649 -        0
+FLAVI+F+I+R4     -28775.872   57941.744 -        0   66435.077 -        0   58589.731 -        0
+mtMAM+F+I+R4     -28777.894   57945.789 -        0   66439.122 -        0   58593.776 -        0
+FLAVI+F+R4       -28784.223   57956.446 -        0   65522.446 -        0   58601.109 -        0
+HIVw+F+R5        -28869.440   58130.880 -        0   67783.880 -        0   58782.190 -        0
+HIVw+F+R4        -28883.235   58154.470 -        0   65720.470 -        0   58799.134 -        0
+HIVw+F+I+R4      -28880.578   58151.155 -        0   66644.489 -        0   58799.142 -        0
+FLAVI+R5         -29021.306   58396.612 -        0   60730.389 -        0   58984.784 -        0
+FLAVI+I+R4       -29042.708   58437.416 -        0   60662.559 -        0   59022.266 -        0
+FLAVI+R4         -29050.866   58451.732 -        0   60575.870 -        0   59033.259 -        0
+mtMet+R5         -29134.254   58622.509 -        0   60956.287 -        0   59210.682 -        0
+mtMet+R4         -29146.321   58642.642 -        0   60766.780 -        0   59224.169 -        0
+mtMet+I+R4       -29146.255   58644.510 -        0   60869.652 -        0   59229.359 -        0
+mtREV+R5         -29199.782   58753.565 -        0   61087.342 -        0   59341.737 -        0
+mtREV+R4         -29210.066   58770.132 -        0   60894.270 -        0   59351.659 -        0
+mtREV+I+R4       -29211.837   58775.674 -        0   61000.817 -        0   59360.523 -        0
+mtInv+R5         -29253.691   58861.381 -        0   61195.159 -        0   59449.554 -        0
+mtInv+R4         -29267.727   58885.454 -        0   61009.592 -        0   59466.980 -        0
+mtInv+I+R4       -29267.231   58886.462 -        0   61111.605 -        0   59471.312 -        0
+mtART+R5         -29293.425   58940.850 -        0   61274.628 -        0   59529.023 -        0
+mtART+R4         -29318.707   58987.415 -        0   61111.553 -        0   59568.941 -        0
+mtART+I+R4       -29323.033   58998.066 -        0   61223.209 -        0   59582.915 -        0
+mtVer+R5         -29408.013   59170.026 -        0   61503.804 -        0   59758.199 -        0
+mtVer+R4         -29419.349   59188.698 -        0   61312.836 -        0   59770.224 -        0
+mtVer+I+R4       -29418.737   59189.475 -        0   61414.618 -        0   59774.324 -        0
+HIVw+R5          -29594.659   59543.317 -        0   61877.095 -        0   60131.490 -        0
+HIVw+I+R4        -29606.291   59564.583 -        0   61789.725 -        0   60149.432 -        0
+HIVw+R4          -29609.182   59568.364 -        0   61692.502 -        0   60149.890 -        0
+mtMAM+R5         -29815.846   59985.693 -        0   62319.470 -        0   60573.865 -        0
+mtMAM+R4         -29844.561   60039.122 -        0   62163.260 -        0   60620.649 -        0
+mtMAM+I+R4       -29845.611   60043.222 -        0   62268.365 -        0   60628.072 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.pfam+F+I+R4
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0935
+  pi(R) = 0.0444
+  pi(N) = 0.0492
+  pi(D) = 0.0442
+  pi(C) = 0.0125
+  pi(Q) = 0.0358
+  pi(E) = 0.0562
+  pi(G) = 0.0458
+  pi(H) = 0.0111
+  pi(I) = 0.0814
+  pi(L) = 0.0999
+  pi(K) = 0.0854
+  pi(M) = 0.0302
+  pi(F) = 0.0483
+  pi(P) = 0.0283
+  pi(S) = 0.0714
+  pi(T) = 0.0614
+  pi(W) = 0.0063
+  pi(Y) = 0.0322
+  pi(V) = 0.0625
+
+Model of rate heterogeneity: Invar+FreeRate with 4 categories
+Proportion of invariable sites: 0.0049
+Site proportion and rates:  (0.0466,0.1555) (0.3204,0.4426) (0.3037,0.9374) (0.3244,1.7455)
+
+ Category  Relative_rate  Proportion
+  0         0              0.0049
+  1         0.1555         0.0466
+  2         0.4426         0.3204
+  3         0.9374         0.3037
+  4         1.7455         0.3244
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -27427.8338 (s.e. 608.0808)
+Unconstrained log-likelihood (without tree): -1091.2170
+Number of free parameters (#branches + #model parameters): 195
+Akaike information criterion (AIC) score: 55245.6675
+Corrected Akaike information criterion (AICc) score: 63739.0009
+Bayesian information criterion (BIC) score: 55893.6545
+
+Total tree length (sum of branch lengths): 75.2165
+Sum of internal branch lengths: 28.9557 (38.4965% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0049) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AHI10997.1_Albatross_Island_virus_Bandavirus' is drawn at root
+Numbers in parentheses are  standard bootstrap support (%)
+
++--AHI10997.1_Albatross_Island_virus_Bandavirus
+|
+|     +--AGL50924.1_Lone_Star_virus_Bandavirus
+|  +--| (99)
+|  |  +--AGC60117.1_Bhanja_virus_Bandavirus
++--| (100)
+|  |                       +---------APG79287.1_Hubei_diptera_virus3_Beidivirus
+|  |                    +--| (52)
+|  |                    |  +-------APG79290.1_Hubei_diptera_virus5_Phasivirus
+|  |                 +--| (24)
+|  |                 |  +------APG79300.1_Hubei_diptera_virus4_Hudivirus
+|  |              +--| (9)
+|  |              |  +------------QED21535.1_Browner_virus_Mobuvirus
+|  |           +--| (4)
+|  |           |  |  +-------------QHA33859.1_Narangue_virus_Mobuvirus
+|  |           |  +--| (16)
+|  |           |     |      +--AMA19448.1_Badu_phasivirus_Phasivirus
+|  |           |     |   +--| (100)
+|  |           |     |   |  +--QLJ83474.1_Parry_s_Creek_phasivirus1_Phasivirus
+|  |           |     +---| (99)
+|  |           |         |  +--QEM39251.1_Guadeloupe_mosquito_phasivirus_Phasivirus
+|  |           |         +--| (98)
+|  |           |            +--AKP18601.1_Phasi_Charoen-like_phasivirus_Phasivirus
+|  |        +--| (1)
+|  |        |  |   +----AOX47532.1_Pidgey_virus_Pidchovirus
+|  |        |  +---| (87)
+|  |        |      +-----QMP82157.1_Coleopteran_phenui-related_virusOKIAV308_Pidchovirus
+|  |     +--| (0)
+|  |     |  |           +-----QDW80895.1_Aphis_citricidus_bunyavirus_Citricivirus
+|  |     |  |        +--| (34)
+|  |     |  |        |  +--------QDF82062.1_Dar_es_Salaam_virusTZ-189_Tanzavirus
+|  |     |  |     +--| (16)
+|  |     |  |     |  +-------QPN53427.1_Mourilyan_virus_Wenrivirus
+|  |     |  |  +--| (5)
+|  |     |  |  |  |         +--DAZ90968.1_Aphalara_polygoni_bunya-like_virus_Goukovirus
+|  |     |  |  |  |      +--| (95)
+|  |     |  |  |  |      |  +--AEJ38173.1_Gouleako_virus_Goukovirus
+|  |     |  |  |  |   +--| (56)
+|  |     |  |  |  |   |  |  +---DAZ90965.1_Ceraphron_bunya-like_virus_Goukovirus
+|  |     |  |  |  |   |  +--| (67)
+|  |     |  |  |  |   |     +---AHH60919.1_Cumuto_virus_Goukovirus
+|  |     |  |  |  +---| (77)
+|  |     |  |  |      +---AJG39334.1_Yichang_Insect_virus_Goukovirus
+|  |     |  +--| (1)
+|  |     |     +-----------APG79263.1_Hubei_lepidoptera_virus1_Hudovirus
+|  |  +--| (86)
+|  |  |  |                          +---UFE16636.1_Brassica_campestris_chinensis_coguvirus1_Coguvirus
+|  |  |  |                       +--| (60)
+|  |  |  |                       |  |        +--AST13125.1_Citrus_concave_gum-associated_virus_Coguvirus
+|  |  |  |                       |  |     +--| (92)
+|  |  |  |                       |  |     |  +--AYN78570.1_Citrus_virusA_Coguvirus
+|  |  |  |                       |  |  +--| (45)
+|  |  |  |                       |  |  |  |  +--QVE55496.1_Watermelon_crinkle_leaf-associated_virus2_Coguvirus
+|  |  |  |                       |  |  |  +--| (94)
+|  |  |  |                       |  |  |     +--QVU28734.1_Yunnan_Paris_virus_Coguvirus
+|  |  |  |                       |  +--| (54)
+|  |  |  |                       |     +--QVE55494.1_Watermelon_crinkle_leaf-associated_virus1_Coguvirus
+|  |  |  |                    +--| (87)
+|  |  |  |                    |  +-----QIJ25706.1_Grapevine_associated_cogu-like_virus1_Coguvirus
+|  |  |  |                 +--| (43)
+|  |  |  |                 |  +----QMP81965.1_Grapevine_associated_cogu-like_virus4_Laulavirus
+|  |  |  |              +--| (47)
+|  |  |  |              |  +-------QCF40768.1_Entoleuca_phenui-like_virus1_Entovirus
+|  |  |  |           +--| (18)
+|  |  |  |           |  |       +--TRINITY_DN55899_c0_g1_i1
+|  |  |  |           |  +-------| (100)
+|  |  |  |           |          |     +--QDZ17044.1_Grapevine_Muscat_rose_virus_Rubodvirus
+|  |  |  |           |          |  +--| (74)
+|  |  |  |           |          |  |  |     +--QDZ17041.1_Grapevine_Garan_dmak_virus_Rubodvirus
+|  |  |  |           |          |  |  |  +--| (69)
+|  |  |  |           |          |  |  |  |  +--AWC67526.1_Apple_rubbery_wood_virus2_Rubodvirus
+|  |  |  |           |          |  |  +--| (61)
+|  |  |  |           |          |  |     +--AWC67527.1_Apple_rubbery_wood_virus2_Rubodvirus
+|  |  |  |           |          +--| (84)
+|  |  |  |           |             +--AWC67513.1_Apple_rubbery_wood_virus1_Rubodvirus
+|  |  |  |        +--| (13)
+|  |  |  |        |  +---------BBI93120.1_Lentinula_edodes_virus2_Lentinuvirus
+|  |  |  |     +--| (45)
+|  |  |  |     |  |         +--QIJ25709.1_Grapevine_associated_cogu-like_virus2_Laulavirus
+|  |  |  |     |  |      +--| (92)
+|  |  |  |     |  |      |  +--QIJ25712.1_Grapevine_associated_cogu-like_virus3_Laulavirus
+|  |  |  |     |  +------| (100)
+|  |  |  |     |         |  +--ASU47550.1_Laurel_Lake_virus_Laulavirus
+|  |  |  |     |         +**| (83)
+|  |  |  |     |            +--QVL22809.1_Wardell_virus_Laulavirus
+|  |  |  |  +--| (11)
+|  |  |  |  |  |      +--AII01802.1_blacklegged_tick_virus1_Ixovirus
+|  |  |  |  |  |   +--| (100)
+|  |  |  |  |  |   |  +--ASY03241.1_Fairhair_virus_Ixovirus
+|  |  |  |  |  +---| (97)
+|  |  |  |  |      +---ANC97696.1_blacklegged_tick_virus3_Ixovirus
+|  |  |  +--| (1)
+|  |  |     |              +-----QRK69432.1_Solenopsis_invicta_virus14_Horwuvirus
+|  |  |     |           +--| (65)
+|  |  |     |           |  +-----------QLJ83472.1_Fitzroy_Crossing_tenui-like_virus1_Horwuvirus
+|  |  |     |        +--| (25)
+|  |  |     |        |  |  +----------AYL40771.1_Melon_chlorotic_spot_virus_Mechlorovirus
+|  |  |     |        |  +--| (33)
+|  |  |     |        |     |         +---AUH25692.1_Rice_hoja_blanca_virus_Tenuivirus
+|  |  |     |        |     |      +--| (98)
+|  |  |     |        |     |      |  +--CAA37635.1_Rice_stripe_virus_Tenuivirus
+|  |  |     |        |     +------| (100)
+|  |  |     |        |            +--QFU20029.1_European_wheat_striate_mosaic_virus_Tenuivirus
+|  |  |     |     +--| (5)
+|  |  |     |     |  |                                                       +--AAB04145.1_Peanut_bud_necrosis_virus_Tospovirus
+|  |  |     |     |  |                                                    +--| (26)
+|  |  |     |     |  |                                                    |  |  +--CAA86555.1_Watermelon_silver_mottle_orthotospovirus_Tospovirus
+|  |  |     |     |  |                                                    |  +--| (22)
+|  |  |     |     |  |                                                    |     +--ABB83818.1_Capsicum_chlorosis_virus_Tospovirus
+|  |  |     |     |  |                                                 +--| (61)
+|  |  |     |     |  |                                                 |  +--ABY79095.1_Watermelon_bud_necrosis_virus_Tospovirus
+|  |  |     |     |  |                                              +--| (27)
+|  |  |     |     |  |                                              |  +--ABU49102.1_Tomato_zonate_spot_virus_Tospovirus
+|  |  |     |     |  |                                           +--| (33)
+|  |  |     |     |  |                                           |  +--ACK99533.1_Tomato_necrotic_ringspot_virus_Tospovirus
+|  |  |     |     |  |                                        +--| (51)
+|  |  |     |     |  |                                        |  |  +**BAB18311.1_Melon_
+|  |  |     |     |  |                                        |  +--| (100)
+|  |  |     |     |  |                                        |     +--AAD34201.1_Physalis_severe_mottle_virus_Tospovirus
+|  |  |     |     |  |                                    +---| (89)
+|  |  |     |     |  |                                    |   |     +--AAB61923.1_Iris_yellow_spot_virus_Tospovirus
+|  |  |     |     |  |                                    |   |  +--| (58)
+|  |  |     |     |  |                                    |   |  |  +--AAV98587.1_Tomato_yellow_ring_virus_Tospovirus
+|  |  |     |     |  |                                    |   +--| (95)
+|  |  |     |     |  |                                    |      +--ABO31117.1_Polygonum_ringspot_virus_
+|  |  |     |     |  |                                 +--| (60)
+|  |  |     |     |  |                                 |  |           +--AAB94022.1_Peanut_yellow_spot_virus_Tospovirus
+|  |  |     |     |  |                                 |  +-----------| (98)
+|  |  |     |     |  |                                 |              +--AAC99405.1_Peanut_chlorotic_fan-spot_virus_Tospovirus
+|  |  |     |     |  |                              +--| (24)
+|  |  |     |     |  |                              |  +--CAA47383.1_Impatiens_necrotic_spot_virus_Tospovirus
+|  |  |     |     |  |                           +--| (37)
+|  |  |     |     |  |                           |  |           +--AAB25256.1_Tomato_chlorotic_spot_virus_Tospovirus
+|  |  |     |     |  |                           |  |        +--| (69)
+|  |  |     |     |  |                           |  |        |  +--AAA03495.1_Tospovirus_sp._Tospovirus
+|  |  |     |     |  |                           |  |     +--| (34)
+|  |  |     |     |  |                           |  |     |  +--ACZ18222.1_Alstroemeria_necrotic_streak_virus_Tospovirus
+|  |  |     |     |  |                           |  |  +--| (82)
+|  |  |     |     |  |                           |  |  |  |  +--AAA53346.1_Tomato_spotted_wilt_virus_Tospovirus
+|  |  |     |     |  |                           |  |  |  +--| (99)
+|  |  |     |     |  |                           |  |  |     +**BAA03025.1_Tomato_spotted_wilt_virus_Tospovirus
+|  |  |     |     |  |                           |  +--| (63)
+|  |  |     |     |  |                           |     |  +--AAF04198.1_Zucchini_lethal_chlorosis_virus_Tospovirus
+|  |  |     |     |  |                           |     +--| (28)
+|  |  |     |     |  |                           |        +--AAF04197.1_Chrysanthemum_stem_necrosis_virus_Tospovirus
+|  |  |     |     |  +---------------------------| (100)
+|  |  |     |     |                              +**ABX72231.1_melon_severe_mosaic_virus_Tospovirus
+|  |  |     |  +--| (4)
+|  |  |     |  |  +----------AJG39322.1_Wuhan_horsefly_virus_Horwuvirus
+|  |  |     +--| (2)
+|  |  |        |  +----QNQ79765.1_Euproctis_pseudoconspersa_bunyavirus_Mobuvirus
+|  |  |        +--| (79)
+|  |  |           +--------AOF41428.1_Mothra_virus_Mobuvirus
+|  +--| (94)
+|     |     +--QBQ01771.1_Tres_Almendras_virus_Phlebovirus
+|     |  +--| (67)
+|     |  |  |     +--ALG75834.1_Alcube_virus_Phlebovirus
+|     |  |  |  +--| (100)
+|     |  |  |  |  +--AJK91621.1_Adana_virus_Phlebovirus
+|     |  |  +--| (73)
+|     |  |     +--QCI62743.1_Frijoles_virus_Phlebovirus
+|     +--| (67)
+|        |        +--AFH08734.1_Grand_Arbaud_virus_Uukuvirus
+|        |     +--| (100)
+|        |     |  +--AEL29679.1_Precarious_point_virus_Uukuvirus
+|        |  +--| (76)
+|        |  |  +----BBB86756.1_Kabuto_mountain_virus_Uukuvirus
+|        +--| (72)
+|           +----AIU95030.1_Silverwater_virus_Uukuvirus
+|
++--ADZ04472.1_SFTS_virusHB29_Bandavirus
+
+Tree in newick format:
+
+(AHI10997.1_Albatross_Island_virus_Bandavirus:0.2786295894,((AGL50924.1_Lone_Star_virus_Bandavirus:0.3828596510,AGC60117.1_Bhanja_virus_Bandavirus:0.2944100017)99:0.4890465565,((((((((APG79287.1_Hubei_diptera_virus3_Beidivirus:1.5571417503,APG79290.1_Hubei_diptera_virus5_Phasivirus:1.3621611459)52:0.4098879898,APG79300.1_Hubei_diptera_virus4_Hudivirus:1.1387418046)24:0.0447027931,QED21535.1_Browner_virus_Mobuvirus:2.0846300957)9:0.1907907065,(QHA33859.1_Narangue_virus_Mobuvirus:2.2679383972,((AMA19448.1_Badu_phasivirus_Phasivirus:0.1581128712,QLJ83474.1_Parry_s_Creek_phasivirus1_Phasivirus:0.0134443428)100:0.5973483679,(QEM39251.1_Guadeloupe_mosquito_phasivirus_Phasivirus:0.2610071016,AKP18601.1_Phasi_Charoen-like_phasivirus_Phasivirus:0.3189400807)98:0.2917324951)99:0.6527880719)16:0.2188163069)4:0.1324346300,(AOX47532.1_Pidgey_virus_Pidchovirus:0.8938927279,QMP82157.1_Coleopteran_phenui-related_virusOKIAV308_Pidchovirus:1.0027083000)87:0.7658860984)1:0.1761109910,((((QDW80895.1_Aphis_citricidus_bunyavirus_Citricivirus:1.0594011244,QDF82062.1_Dar_es_Salaam_virusTZ-189_Tanzavirus:1.4394379165)34:0.2035586741,QPN53427.1_Mourilyan_virus_Wenrivirus:1.3748242470)16:0.2332777551,(((DAZ90968.1_Aphalara_polygoni_bunya-like_virus_Goukovirus:0.5687058868,AEJ38173.1_Gouleako_virus_Goukovirus:0.3949415999)95:0.2659012529,(DAZ90965.1_Ceraphron_bunya-like_virus_Goukovirus:0.7300930767,AHH60919.1_Cumuto_virus_Goukovirus:0.7280656201)67:0.3196521153)56:0.2725983869,AJG39334.1_Yichang_Insect_virus_Goukovirus:0.7105483279)77:0.7509223526)5:0.0809778196,APG79263.1_Hubei_lepidoptera_virus1_Hudovirus:1.9649460704)1:0.0631302457)0:0.1708415169,(((((((((UFE16636.1_Brassica_campestris_chinensis_coguvirus1_Coguvirus:0.6508909753,(((AST13125.1_Citrus_concave_gum-associated_virus_Coguvirus:0.1680452163,AYN78570.1_Citrus_virusA_Coguvirus:0.1906698819)92:0.1834800592,(QVE55496.1_Watermelon_crinkle_leaf-associated_virus2_Coguvirus:0.1645589974,QVU28734.1_Yunnan_Paris_virus_Coguvirus:0.2066553232)94:0.2647616434)45:0.0713411089,QVE55494.1_Watermelon_crinkle_leaf-associated_virus1_Coguvirus:0.2781406875)54:0.1862013648)60:0.2608602246,QIJ25706.1_Grapevine_associated_cogu-like_virus1_Coguvirus:0.9769952165)87:0.4081780835,QMP81965.1_Grapevine_associated_cogu-like_virus4_Laulavirus:0.9047171341)43:0.1669450307,QCF40768.1_Entoleuca_phenui-like_virus1_Entovirus:1.3599931725)47:0.1393313809,(TRINITY_DN55899_c0_g1_i1:0.4119175201,((QDZ17044.1_Grapevine_Muscat_rose_virus_Rubodvirus:0.1282395135,((QDZ17041.1_Grapevine_Garan_dmak_virus_Rubodvirus:0.0607246038,AWC67526.1_Apple_rubbery_wood_virus2_Rubodvirus:0.0462407776)69:0.0493847049,AWC67527.1_Apple_rubbery_wood_virus2_Rubodvirus:0.1053822133)61:0.0467744326)74:0.1074025826,AWC67513.1_Apple_rubbery_wood_virus1_Rubodvirus:0.1282382769)84:0.3436306174)100:1.3190994577)18:0.1660241724,BBI93120.1_Lentinula_edodes_virus2_Lentinuvirus:1.5546464075)13:0.0682733510,((QIJ25709.1_Grapevine_associated_cogu-like_virus2_Laulavirus:0.1307415338,QIJ25712.1_Grapevine_associated_cogu-like_virus3_Laulavirus:0.1490530385)92:0.1594090598,(ASU47550.1_Laurel_Lake_virus_Laulavirus:0.0873987696,QVL22809.1_Wardell_virus_Laulavirus:0.0719801396)83:0.0002684919)100:1.1889587314)45:0.3814515651,((AII01802.1_blacklegged_tick_virus1_Ixovirus:0.2424350413,ASY03241.1_Fairhair_virus_Ixovirus:0.1194306989)100:0.4672791339,ANC97696.1_blacklegged_tick_virus3_Ixovirus:0.6290632551)97:0.6340415332)11:0.1662571895,(((((QRK69432.1_Solenopsis_invicta_virus14_Horwuvirus:1.0267939682,QLJ83472.1_Fitzroy_Crossing_tenui-like_virus1_Horwuvirus:1.9059450187)65:0.3765774363,(AYL40771.1_Melon_chlorotic_spot_virus_Mechlorovirus:1.7383513942,((AUH25692.1_Rice_hoja_blanca_virus_Tenuivirus:0.6824503949,CAA37635.1_Rice_stripe_virus_Tenuivirus:0.1962686151)98:0.4749826436,QFU20029.1_European_wheat_striate_mosaic_virus_Tenuivirus:0.4964853241)100:1.0938438561)33:0.1598541776)25:0.1149072174,((((((((((AAB04145.1_Peanut_bud_necrosis_virus_Tospovirus:0.0593706334,(CAA86555.1_Watermelon_silver_mottle_orthotospovirus_Tospovirus:0.0678487240,ABB83818.1_Capsicum_chlorosis_virus_Tospovirus:0.1203849430)22:0.0325233197)26:0.0536421570,ABY79095.1_Watermelon_bud_necrosis_virus_Tospovirus:0.0837603445)61:0.2020585208,ABU49102.1_Tomato_zonate_spot_virus_Tospovirus:0.3053285200)27:0.0765803548,ACK99533.1_Tomato_necrotic_ringspot_virus_Tospovirus:0.4409736042)33:0.1453257360,(BAB18311.1_Melon_:0.0000021883,AAD34201.1_Physalis_severe_mottle_virus_Tospovirus:0.0059057550)100:0.2311385350)51:0.3012093481,((AAB61923.1_Iris_yellow_spot_virus_Tospovirus:0.2954229446,AAV98587.1_Tomato_yellow_ring_virus_Tospovirus:0.0723261465)58:0.0562223575,ABO31117.1_Polygonum_ringspot_virus_:0.0264341755)95:0.3198550636)89:0.7167617049,(AAB94022.1_Peanut_yellow_spot_virus_Tospovirus:0.1803514556,AAC99405.1_Peanut_chlorotic_fan-spot_virus_Tospovirus:0.2854143443)98:1.9338455890)60:0.4920382968,CAA47383.1_Impatiens_necrotic_spot_virus_Tospovirus:0.4151361528)24:0.0848518764,((((AAB25256.1_Tomato_chlorotic_spot_virus_Tospovirus:0.1333968200,AAA03495.1_Tospovirus_sp._Tospovirus:0.0791099851)69:0.0480879186,ACZ18222.1_Alstroemeria_necrotic_streak_virus_Tospovirus:0.1184954453)34:0.0219591708,(AAA53346.1_Tomato_spotted_wilt_virus_Tospovirus:0.0134814772,BAA03025.1_Tomato_spotted_wilt_virus_Tospovirus:0.0029575530)99:0.1224572473)82:0.0947143602,(AAF04198.1_Zucchini_lethal_chlorosis_virus_Tospovirus:0.1192522832,AAF04197.1_Chrysanthemum_stem_necrosis_virus_Tospovirus:0.1359232452)28:0.0091628765)63:0.1789880615)37:0.2750578059,ABX72231.1_melon_severe_mosaic_virus_Tospovirus:0.0000021125)100:4.4050728958)5:0.1713331891,AJG39322.1_Wuhan_horsefly_virus_Horwuvirus:1.7825160244)4:0.2474341791,(QNQ79765.1_Euproctis_pseudoconspersa_bunyavirus_Mobuvirus:0.8364120164,AOF41428.1_Mothra_virus_Mobuvirus:1.4738266394)79:0.5327072608)2:0.1691211660)1:0.1549277530)86:0.4379505208,((QBQ01771.1_Tres_Almendras_virus_Phlebovirus:0.4551909569,((ALG75834.1_Alcube_virus_Phlebovirus:0.1362546866,AJK91621.1_Adana_virus_Phlebovirus:0.1297046095)100:0.3117734496,QCI62743.1_Frijoles_virus_Phlebovirus:0.3036039865)73:0.0878871697)67:0.1476176936,(((AFH08734.1_Grand_Arbaud_virus_Uukuvirus:0.3216366865,AEL29679.1_Precarious_point_virus_Uukuvirus:0.1405719009)100:0.3649156637,BBB86756.1_Kabuto_mountain_virus_Uukuvirus:0.7847380561)76:0.1239787578,AIU95030.1_Silverwater_virus_Uukuvirus:0.8442390595)72:0.2501516968)67:0.1959390328)94:0.3038135419)100:0.3247038135,ADZ04472.1_SFTS_virusHB29_Bandavirus:0.2927722076);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -27445.869956
+Robinson-Foulds distance between ML tree and consensus tree: 36
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--AHI10997.1_Albatross_Island_virus_Bandavirus
+|
+|     +--AGL50924.1_Lone_Star_virus_Bandavirus
+|  +--| (99)
+|  |  +--AGC60117.1_Bhanja_virus_Bandavirus
++--| (100)
+|  |                    +--------APG79287.1_Hubei_diptera_virus3_Beidivirus
+|  |                 +--| (52)
+|  |                 |  +--------APG79290.1_Hubei_diptera_virus5_Phasivirus
+|  |              +--| (24)
+|  |              |  +------APG79300.1_Hubei_diptera_virus4_Hudivirus
+|  |           +--| (7)
+|  |           |  |        +--AMA19448.1_Badu_phasivirus_Phasivirus
+|  |           |  |    +---| (100)
+|  |           |  |    |   +--QLJ83474.1_Parry_s_Creek_phasivirus1_Phasivirus
+|  |           |  +----| (99)
+|  |           |       |  +--QEM39251.1_Guadeloupe_mosquito_phasivirus_Phasivirus
+|  |           |       +--| (98)
+|  |           |          +--AKP18601.1_Phasi_Charoen-like_phasivirus_Phasivirus
+|  |        +--| (0)
+|  |        |  |  +-----QDW80895.1_Aphis_citricidus_bunyavirus_Citricivirus
+|  |        |  +--| (34)
+|  |        |     +--------QDF82062.1_Dar_es_Salaam_virusTZ-189_Tanzavirus
+|  |     +--| (2)
+|  |     |  |                             +---UFE16636.1_Brassica_campestris_chinensis_coguvirus1_Coguvirus
+|  |     |  |                          +--| (60)
+|  |     |  |                          |  |        +--AST13125.1_Citrus_concave_gum-associated_virus_Coguvirus
+|  |     |  |                          |  |     +--| (92)
+|  |     |  |                          |  |     |  +--AYN78570.1_Citrus_virusA_Coguvirus
+|  |     |  |                          |  |  +--| (45)
+|  |     |  |                          |  |  |  |  +--QVE55496.1_Watermelon_crinkle_leaf-associated_virus2_Coguvirus
+|  |     |  |                          |  |  |  +--| (94)
+|  |     |  |                          |  |  |     +--QVU28734.1_Yunnan_Paris_virus_Coguvirus
+|  |     |  |                          |  +--| (54)
+|  |     |  |                          |     +--QVE55494.1_Watermelon_crinkle_leaf-associated_virus1_Coguvirus
+|  |     |  |                       +--| (87)
+|  |     |  |                       |  +-----QIJ25706.1_Grapevine_associated_cogu-like_virus1_Coguvirus
+|  |     |  |                    +--| (43)
+|  |     |  |                    |  +----QMP81965.1_Grapevine_associated_cogu-like_virus4_Laulavirus
+|  |     |  |                 +--| (47)
+|  |     |  |                 |  +--------QCF40768.1_Entoleuca_phenui-like_virus1_Entovirus
+|  |     |  |              +--| (28)
+|  |     |  |              |  |         +--QIJ25709.1_Grapevine_associated_cogu-like_virus2_Laulavirus
+|  |     |  |              |  |      +--| (92)
+|  |     |  |              |  |      |  +--QIJ25712.1_Grapevine_associated_cogu-like_virus3_Laulavirus
+|  |     |  |              |  +------| (100)
+|  |     |  |              |         |  +--ASU47550.1_Laurel_Lake_virus_Laulavirus
+|  |     |  |              |         +--| (83)
+|  |     |  |              |            +--QVL22809.1_Wardell_virus_Laulavirus
+|  |     |  |           +--| (38)
+|  |     |  |           |  +--------BBI93120.1_Lentinula_edodes_virus2_Lentinuvirus
+|  |     |  |        +--| (45)
+|  |     |  |        |  |       +--TRINITY_DN55899_c0_g1_i1
+|  |     |  |        |  +-------| (100)
+|  |     |  |        |          |     +--QDZ17044.1_Grapevine_Muscat_rose_virus_Rubodvirus
+|  |     |  |        |          |  +--| (74)
+|  |     |  |        |          |  |  |     +--QDZ17041.1_Grapevine_Garan_dmak_virus_Rubodvirus
+|  |     |  |        |          |  |  |  +--| (69)
+|  |     |  |        |          |  |  |  |  +--AWC67526.1_Apple_rubbery_wood_virus2_Rubodvirus
+|  |     |  |        |          |  |  +--| (61)
+|  |     |  |        |          |  |     +--AWC67527.1_Apple_rubbery_wood_virus2_Rubodvirus
+|  |     |  |        |          +--| (84)
+|  |     |  |        |             +--AWC67513.1_Apple_rubbery_wood_virus1_Rubodvirus
+|  |     |  |     +--| (11)
+|  |     |  |     |  |      +--AII01802.1_blacklegged_tick_virus1_Ixovirus
+|  |     |  |     |  |   +--| (100)
+|  |     |  |     |  |   |  +--ASY03241.1_Fairhair_virus_Ixovirus
+|  |     |  |     |  +---| (97)
+|  |     |  |     |      +--ANC97696.1_blacklegged_tick_virus3_Ixovirus
+|  |     |  |  +--| (1)
+|  |     |  |  |  |        +------QRK69432.1_Solenopsis_invicta_virus14_Horwuvirus
+|  |     |  |  |  |     +--| (65)
+|  |     |  |  |  |     |  +-----------QLJ83472.1_Fitzroy_Crossing_tenui-like_virus1_Horwuvirus
+|  |     |  |  |  |  +--| (25)
+|  |     |  |  |  |  |  |  +----------AYL40771.1_Melon_chlorotic_spot_virus_Mechlorovirus
+|  |     |  |  |  |  |  +--| (33)
+|  |     |  |  |  |  |     |        +---AUH25692.1_Rice_hoja_blanca_virus_Tenuivirus
+|  |     |  |  |  |  |     |     +--| (98)
+|  |     |  |  |  |  |     |     |  +--CAA37635.1_Rice_stripe_virus_Tenuivirus
+|  |     |  |  |  |  |     +-----| (100)
+|  |     |  |  |  |  |           +--QFU20029.1_European_wheat_striate_mosaic_virus_Tenuivirus
+|  |     |  |  |  +--| (4)
+|  |     |  |  |     |  +----------AJG39322.1_Wuhan_horsefly_virus_Horwuvirus
+|  |     |  |  |     +--| (26)
+|  |     |  |  |        |  +----QNQ79765.1_Euproctis_pseudoconspersa_bunyavirus_Mobuvirus
+|  |     |  |  |        +--| (79)
+|  |     |  |  |           +---------AOF41428.1_Mothra_virus_Mobuvirus
+|  |     |  +--| (0)
+|  |     |     |  +------------APG79263.1_Hubei_lepidoptera_virus1_Hudovirus
+|  |     |     +--| (0)
+|  |     |        |     +------------QED21535.1_Browner_virus_Mobuvirus
+|  |     |        |  +--| (10)
+|  |     |        |  |  |  +-----AOX47532.1_Pidgey_virus_Pidchovirus
+|  |     |        |  |  +--| (87)
+|  |     |        |  |     +-----QMP82157.1_Coleopteran_phenui-related_virusOKIAV308_Pidchovirus
+|  |     |        +--| (2)
+|  |     |           |  +------------QHA33859.1_Narangue_virus_Mobuvirus
+|  |     |           +--| (18)
+|  |     |              +-----QPN53427.1_Mourilyan_virus_Wenrivirus
+|  |  +--| (86)
+|  |  |  |            +--DAZ90968.1_Aphalara_polygoni_bunya-like_virus_Goukovirus
+|  |  |  |         +--| (95)
+|  |  |  |         |  +--AEJ38173.1_Gouleako_virus_Goukovirus
+|  |  |  |      +--| (56)
+|  |  |  |      |  |  +---DAZ90965.1_Ceraphron_bunya-like_virus_Goukovirus
+|  |  |  |      |  +--| (67)
+|  |  |  |      |     +---AHH60919.1_Cumuto_virus_Goukovirus
+|  |  |  |   +--| (77)
+|  |  |  |   |  +---AJG39334.1_Yichang_Insect_virus_Goukovirus
+|  |  |  +---| (27)
+|  |  |      |                                                     +--AAB04145.1_Peanut_bud_necrosis_virus_Tospovirus
+|  |  |      |                                                  +--| (26)
+|  |  |      |                                                  |  |  +--CAA86555.1_Watermelon_silver_mottle_orthotospovirus_Tospovirus
+|  |  |      |                                                  |  +--| (30)
+|  |  |      |                                                  |     +--ABY79095.1_Watermelon_bud_necrosis_virus_Tospovirus
+|  |  |      |                                               +--| (61)
+|  |  |      |                                               |  +--ABB83818.1_Capsicum_chlorosis_virus_Tospovirus
+|  |  |      |                                            +--| (27)
+|  |  |      |                                            |  +--ABU49102.1_Tomato_zonate_spot_virus_Tospovirus
+|  |  |      |                                         +--| (33)
+|  |  |      |                                         |  +--ACK99533.1_Tomato_necrotic_ringspot_virus_Tospovirus
+|  |  |      |                                      +--| (51)
+|  |  |      |                                      |  |  +--BAB18311.1_Melon_
+|  |  |      |                                      |  +--| (100)
+|  |  |      |                                      |     +--AAD34201.1_Physalis_severe_mottle_virus_Tospovirus
+|  |  |      |                                  +---| (89)
+|  |  |      |                                  |   |     +--AAB61923.1_Iris_yellow_spot_virus_Tospovirus
+|  |  |      |                                  |   |  +--| (58)
+|  |  |      |                                  |   |  |  +--AAV98587.1_Tomato_yellow_ring_virus_Tospovirus
+|  |  |      |                                  |   +--| (95)
+|  |  |      |                                  |      +--ABO31117.1_Polygonum_ringspot_virus_
+|  |  |      |                               +--| (60)
+|  |  |      |                               |  |           +--AAB94022.1_Peanut_yellow_spot_virus_Tospovirus
+|  |  |      |                               |  +-----------| (98)
+|  |  |      |                               |              +--AAC99405.1_Peanut_chlorotic_fan-spot_virus_Tospovirus
+|  |  |      |                            +--| (37)
+|  |  |      |                            |  |  +--CAA47383.1_Impatiens_necrotic_spot_virus_Tospovirus
+|  |  |      |                            |  +--| (41)
+|  |  |      |                            |     |              +--AAB25256.1_Tomato_chlorotic_spot_virus_Tospovirus
+|  |  |      |                            |     |           +--| (69)
+|  |  |      |                            |     |           |  +--AAA03495.1_Tospovirus_sp._Tospovirus
+|  |  |      |                            |     |        +--| (34)
+|  |  |      |                            |     |        |  +--ACZ18222.1_Alstroemeria_necrotic_streak_virus_Tospovirus
+|  |  |      |                            |     |     +--| (82)
+|  |  |      |                            |     |     |  |  +--AAA53346.1_Tomato_spotted_wilt_virus_Tospovirus
+|  |  |      |                            |     |     |  +--| (99)
+|  |  |      |                            |     |     |     +--BAA03025.1_Tomato_spotted_wilt_virus_Tospovirus
+|  |  |      |                            |     |  +--| (28)
+|  |  |      |                            |     |  |  +--AAF04198.1_Zucchini_lethal_chlorosis_virus_Tospovirus
+|  |  |      |                            |     +--| (63)
+|  |  |      |                            |        +--AAF04197.1_Chrysanthemum_stem_necrosis_virus_Tospovirus
+|  |  |      +----------------------------| (100)
+|  |  |                                   +--ABX72231.1_melon_severe_mosaic_virus_Tospovirus
+|  +--| (94)
+|     |     +--QBQ01771.1_Tres_Almendras_virus_Phlebovirus
+|     |  +--| (67)
+|     |  |  |     +--ALG75834.1_Alcube_virus_Phlebovirus
+|     |  |  |  +--| (100)
+|     |  |  |  |  +--AJK91621.1_Adana_virus_Phlebovirus
+|     |  |  +--| (73)
+|     |  |     +--QCI62743.1_Frijoles_virus_Phlebovirus
+|     +--| (67)
+|        |        +--AFH08734.1_Grand_Arbaud_virus_Uukuvirus
+|        |     +--| (100)
+|        |     |  +--AEL29679.1_Precarious_point_virus_Uukuvirus
+|        |  +--| (76)
+|        |  |  +----BBB86756.1_Kabuto_mountain_virus_Uukuvirus
+|        +--| (72)
+|           +----AIU95030.1_Silverwater_virus_Uukuvirus
+|
++--ADZ04472.1_SFTS_virusHB29_Bandavirus
+
+
+Consensus tree in newick format: 
+
+(AHI10997.1_Albatross_Island_virus_Bandavirus:0.2812672311,((AGL50924.1_Lone_Star_virus_Bandavirus:0.3681503248,AGC60117.1_Bhanja_virus_Bandavirus:0.3122510245)99:0.4930156499,(((((((APG79287.1_Hubei_diptera_virus3_Beidivirus:1.4752119120,APG79290.1_Hubei_diptera_virus5_Phasivirus:1.4383760576)52:0.4462605379,APG79300.1_Hubei_diptera_virus4_Hudivirus:1.1149687749)24:0.2313420860,((AMA19448.1_Badu_phasivirus_Phasivirus:0.1372197917,QLJ83474.1_Parry_s_Creek_phasivirus1_Phasivirus:0.0354737046)100:0.6101300826,(QEM39251.1_Guadeloupe_mosquito_phasivirus_Phasivirus:0.2599486713,AKP18601.1_Phasi_Charoen-like_phasivirus_Phasivirus:0.3217390783)98:0.2781900268)99:0.8844539151)7:0.2404143956,(QDW80895.1_Aphis_citricidus_bunyavirus_Citricivirus:1.0618143681,QDF82062.1_Dar_es_Salaam_virusTZ-189_Tanzavirus:1.4207707388)34:0.5170636436)0:0.0106663855,((((((((((UFE16636.1_Brassica_campestris_chinensis_coguvirus1_Coguvirus:0.6570276058,(((AST13125.1_Citrus_concave_gum-associated_virus_Coguvirus:0.1687259939,AYN78570.1_Citrus_virusA_Coguvirus:0.1910291397)92:0.1843247528,(QVE55496.1_Watermelon_crinkle_leaf-associated_virus2_Coguvirus:0.1658841701,QVU28734.1_Yunnan_Paris_virus_Coguvirus:0.2064985116)94:0.2663130913)45:0.0716272551,QVE55494.1_Watermelon_crinkle_leaf-associated_virus1_Coguvirus:0.2785153210)54:0.1813589350)60:0.2859463690,QIJ25706.1_Grapevine_associated_cogu-like_virus1_Coguvirus:0.9660224505)87:0.4514140287,QMP81965.1_Grapevine_associated_cogu-like_virus4_Laulavirus:0.8805985349)43:0.1247648535,QCF40768.1_Entoleuca_phenui-like_virus1_Entovirus:1.3913234468)47:0.2332649481,((QIJ25709.1_Grapevine_associated_cogu-like_virus2_Laulavirus:0.1326488914,QIJ25712.1_Grapevine_associated_cogu-like_virus3_Laulavirus:0.1485873457)92:0.1605739681,(ASU47550.1_Laurel_Lake_virus_Laulavirus:0.0868268458,QVL22809.1_Wardell_virus_Laulavirus:0.0733977114)83:0.0000022062)100:1.2130746306)28:0.1369612024,BBI93120.1_Lentinula_edodes_virus2_Lentinuvirus:1.5165448711)38:0.0844573458,(TRINITY_DN55899_c0_g1_i1:0.4288277679,((QDZ17044.1_Grapevine_Muscat_rose_virus_Rubodvirus:0.1288157917,((QDZ17041.1_Grapevine_Garan_dmak_virus_Rubodvirus:0.0610541682,AWC67526.1_Apple_rubbery_wood_virus2_Rubodvirus:0.0464753573)69:0.0496041122,AWC67527.1_Apple_rubbery_wood_virus2_Rubodvirus:0.1059165168)61:0.0469947404)74:0.1059445429,AWC67513.1_Apple_rubbery_wood_virus1_Rubodvirus:0.1305886073)84:0.3302766889)100:1.2929238943)45:0.3494501236,((AII01802.1_blacklegged_tick_virus1_Ixovirus:0.2442884963,ASY03241.1_Fairhair_virus_Ixovirus:0.1198668765)100:0.5071589972,ANC97696.1_blacklegged_tick_virus3_Ixovirus:0.5971886606)97:0.6819126522)11:0.1491940838,(((QRK69432.1_Solenopsis_invicta_virus14_Horwuvirus:1.0970249401,QLJ83472.1_Fitzroy_Crossing_tenui-like_virus1_Horwuvirus:1.8627312808)65:0.4321671224,(AYL40771.1_Melon_chlorotic_spot_virus_Mechlorovirus:1.7597041837,((AUH25692.1_Rice_hoja_blanca_virus_Tenuivirus:0.6728544969,CAA37635.1_Rice_stripe_virus_Tenuivirus:0.2087229540)98:0.4649737502,QFU20029.1_European_wheat_striate_mosaic_virus_Tenuivirus:0.5074196773)100:1.0590725970)33:0.1269852125)25:0.3614254357,(AJG39322.1_Wuhan_horsefly_virus_Horwuvirus:1.7958001957,(QNQ79765.1_Euproctis_pseudoconspersa_bunyavirus_Mobuvirus:0.8070644628,AOF41428.1_Mothra_virus_Mobuvirus:1.5334995378)79:0.4862566215)26:0.2155911376)4:0.1998348977)1:0.1932847029,(APG79263.1_Hubei_lepidoptera_virus1_Hudovirus:2.0491461161,((QED21535.1_Browner_virus_Mobuvirus:2.1222469681,(AOX47532.1_Pidgey_virus_Pidchovirus:0.9302023338,QMP82157.1_Coleopteran_phenui-related_virusOKIAV308_Pidchovirus:0.9990203006)87:0.4779282114)10:0.1913104783,(QHA33859.1_Narangue_virus_Mobuvirus:2.0914336623,QPN53427.1_Mourilyan_virus_Wenrivirus:0.9916591239)18:0.4376082038)2:0.2590754374)0:0.0176723199)0:0.0580007134)2:0.1388791710,((((DAZ90968.1_Aphalara_polygoni_bunya-like_virus_Goukovirus:0.5616022691,AEJ38173.1_Gouleako_virus_Goukovirus:0.4099183809)95:0.2819733651,(DAZ90965.1_Ceraphron_bunya-like_virus_Goukovirus:0.7392187230,AHH60919.1_Cumuto_virus_Goukovirus:0.7264094002)67:0.3125899815)56:0.2536255606,AJG39334.1_Yichang_Insect_virus_Goukovirus:0.6978091122)77:0.2878001755,(((((((((AAB04145.1_Peanut_bud_necrosis_virus_Tospovirus:0.0670408955,(CAA86555.1_Watermelon_silver_mottle_orthotospovirus_Tospovirus:0.0676257070,ABY79095.1_Watermelon_bud_necrosis_virus_Tospovirus:0.1392164884)30:0.0260059315)26:0.0353111828,ABB83818.1_Capsicum_chlorosis_virus_Tospovirus:0.0841430535)61:0.2142271368,ABU49102.1_Tomato_zonate_spot_virus_Tospovirus:0.3006390825)27:0.0719691754,ACK99533.1_Tomato_necrotic_ringspot_virus_Tospovirus:0.4374056725)33:0.1473185318,(BAB18311.1_Melon_:0.0000021969,AAD34201.1_Physalis_severe_mottle_virus_Tospovirus:0.0059175337)100:0.2371362621)51:0.2901605569,((AAB61923.1_Iris_yellow_spot_virus_Tospovirus:0.2964847832,AAV98587.1_Tomato_yellow_ring_virus_Tospovirus:0.0725549070)58:0.0556955384,ABO31117.1_Polygonum_ringspot_virus_:0.0273722318)95:0.3452155446)89:0.7393847773,(AAB94022.1_Peanut_yellow_spot_virus_Tospovirus:0.1733357741,AAC99405.1_Peanut_chlorotic_fan-spot_virus_Tospovirus:0.2941615017)98:1.9351170919)60:0.4929780061,(CAA47383.1_Impatiens_necrotic_spot_virus_Tospovirus:0.4894940527,(((((AAB25256.1_Tomato_chlorotic_spot_virus_Tospovirus:0.1337886088,AAA03495.1_Tospovirus_sp._Tospovirus:0.0794930100)69:0.0486414747,ACZ18222.1_Alstroemeria_necrotic_streak_virus_Tospovirus:0.1195266323)34:0.0200343945,(AAA53346.1_Tomato_spotted_wilt_virus_Tospovirus:0.0134493007,BAA03025.1_Tomato_spotted_wilt_virus_Tospovirus:0.0030508138)99:0.1242207076)82:0.0997351590,AAF04198.1_Zucchini_lethal_chlorosis_virus_Tospovirus:0.1196704993)28:0.0075504207,AAF04197.1_Chrysanthemum_stem_necrosis_virus_Tospovirus:0.1355827393)63:0.1744634486)41:0.0787639955)37:0.1957497722,ABX72231.1_melon_severe_mosaic_virus_Tospovirus:0.0174509229)100:4.5067015662)27:0.6206183309)86:0.4414658551,((QBQ01771.1_Tres_Almendras_virus_Phlebovirus:0.4557466714,((ALG75834.1_Alcube_virus_Phlebovirus:0.1367504804,AJK91621.1_Adana_virus_Phlebovirus:0.1301624933)100:0.3183176443,QCI62743.1_Frijoles_virus_Phlebovirus:0.3024296441)73:0.0899086144)67:0.1349824733,(((AFH08734.1_Grand_Arbaud_virus_Uukuvirus:0.3234787566,AEL29679.1_Precarious_point_virus_Uukuvirus:0.1411909910)100:0.3706805185,BBB86756.1_Kabuto_mountain_virus_Uukuvirus:0.7917372055)76:0.1323192122,AIU95030.1_Silverwater_virus_Uukuvirus:0.8479352612)72:0.2580207778)67:0.2165009098)94:0.2984568743)100:0.3186653631,ADZ04472.1_SFTS_virusHB29_Bandavirus:0.2943313259);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t merged_ORF_N.mafft.trimal.fasta.treefile -m "Q.pfam+F+I{0.00487442}+R4{0.0466049,0.155454,0.320399,0.442558,0.303702,0.937373,0.324419,1.74551}" --length 205
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s merged_ORF_N.mafft.trimal.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s merged_ORF_N.mafft.trimal.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Aug  8 21:34:08 2024
+Total CPU time used: 1103387.932 seconds (306h:29m:47s)
+Total wall-clock time used: 160726.9471 seconds (44h:38m:46s)
+
