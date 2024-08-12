@@ -1,0 +1,78 @@
+---
+title: "Untitled"
+output: html_document
+date: "2024-04-13"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+library(ggplot2)
+library(tidyr)
+
+setwd("F:/Project/project_Morus_virus/peak")
+
+file_names <- c("RNA3")
+
+for (file_name in file_names) {
+  # 构造完整的文件路径
+  file_path <- paste0(file_name, "_peak.txt")
+  
+  material <- read.table(file_path, header = FALSE)
+  colnames(material) <- c("Length", "Forward_count", "Reverse_count")
+  
+  # 输出文件名
+  print(paste("文件名:", file_name))
+  
+  # 修改数据框，将第三列数据累加到第二列数据上
+  material$total_count <- material$Forward_count + material$Reverse_count
+  
+  # 绘制柱状图
+  p <- ggplot(material, aes(x = factor(Length))) +
+    geom_bar(aes(y = Forward_count, fill = "Forward"), position = position_dodge2(width = 0.7), stat = "identity", width = 0.7) +
+    geom_bar(aes(y = -Reverse_count, fill = "Reverse"), position = position_dodge2(width = 0.7), stat = "identity", width = 0.7) +
+    scale_fill_manual(values = c("Forward" = "#E69F00", "Reverse" = "#009E73")) +
+    labs(x = "Length of siRNA", y = "Count") +
+    scale_y_continuous(labels = scales::comma, breaks = seq(-19000, 10000, by = 2000)) + # 设置y轴刻度
+    theme_minimal() +
+    theme(
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank(),
+      panel.border = element_blank(),
+      axis.line = element_line(color = "black"),
+      axis.text = element_text(family = "Arial", face = "bold", size = 20),  # 修改坐标轴标签的字体为Arial，加粗，大小为12
+      axis.title = element_text(family = "Arial", face = "bold", size = 22),   # 修改坐标轴标题的字体为Arial，加粗，大小为14
+      plot.title = element_text(size = 16, face = "bold"),
+      plot.background = element_rect(fill = "white"),
+      panel.background = element_rect(fill = "white"),
+      plot.margin = margin(1, 1, 1, 1, "cm")
+    ) +
+    guides(fill = guide_legend(title = "Strand", override.aes = list(color = c("#E69F00", "#009E73")), labels = c("Forward", "Reverse")))
+  
+  # 输出图像为SVG格式
+  output_file <- paste0(gsub(" ", "", file_name), ".svg")
+  # 使用ggsave保存图像为SVG文件，以像素为单位
+  ggsave(output_file, p, width = 840 / 96, height = 576 / 96, units = "in", dpi = 96)
+  
+  # 打印完成信息
+  print(paste("图像已保存为", output_file))
+}
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
