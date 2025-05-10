@@ -1,0 +1,359 @@
+IQ-TREE 2.3.5 built Jul 22 2024
+
+Input file name: virus_combine.mafft.trimal.fasta
+Type of analysis: ModelFinder + tree reconstruction + non-parametric bootstrap (1000 replicates)
+Random seed number: 326865
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 22 sequences with 1903 amino-acid sites
+Number of constant sites: 25 (= 1.31372% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 25 (= 1.31372% of all sites)
+Number of parsimony informative sites: 1752
+Number of distinct site patterns: 1860
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.pfam+F+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+Q.pfam+F+R4      -66694.587  133521.174 +    0.689  133525.991 +    0.704  133887.553 +    0.972
+Q.pfam+F+I+R4    -66694.383  133522.767 +    0.311  133527.733 +    0.295  133894.696 -   0.0273
+LG+F+R4          -66701.776  133535.551 -  0.00052  133540.368 - 0.000532  133901.930 - 0.000734
+LG+F+I+R4        -66701.342  133536.684 - 0.000295  133541.649 -  0.00028  133908.613 -  2.6e-05
+Q.yeast+F+R4     -66775.829  133683.658 - 3.59e-36  133688.474 - 3.67e-36  134050.036 - 5.07e-36
+Q.yeast+F+I+R4   -66775.864  133685.729 - 1.27e-36  133690.694 - 1.21e-36  134057.658 - 1.12e-37
+rtREV+F+R4       -66843.757  133819.514 - 1.13e-65  133824.331 - 1.16e-65  134185.892 -  1.6e-65
+rtREV+F+I+R4     -66843.565  133821.130 - 5.05e-66  133826.096 -  4.8e-66  134193.059 - 4.44e-67
+WAG+F+R4         -66945.210  134022.420 - 9.86e-110  134027.237 - 1.01e-109  134388.799 - 1.39e-109
+WAG+F+I+R4       -66944.759  134023.518 - 5.7e-110  134028.483 - 5.41e-110  134395.447 - 5.01e-111
+Q.insect+F+R4    -66950.038  134032.076 - 7.89e-112  134036.893 - 8.07e-112  134398.455 - 1.11e-111
+Q.insect+F+I+R4  -66949.942  134033.883 - 3.2e-112  134038.849 - 3.04e-112  134405.813 - 2.81e-113
+VT+F+R4          -67020.111  134172.223 - 2.91e-142  134177.040 - 2.98e-142  134538.601 - 4.11e-142
+VT+F+I+R4        -67020.072  134174.144 - 1.12e-142  134179.109 - 1.06e-142  134546.073 - 9.81e-144
+LG+R4            -67136.709  134367.418 - 1.2e-184  134369.850 - 4.04e-184  134628.324 - 1.35e-161
+LG+I+R4          -67136.550  134369.100 - 5.17e-185  134371.637 - 1.65e-184  134635.557 - 3.64e-163
+LG+R5            -67136.290  134370.580 - 2.47e-185  134373.225 - 7.47e-185  134642.588 - 1.08e-164
+LG+I+R5          -67136.136  134372.272 - 1.06e-185  134375.025 - 3.04e-185  134649.831 - 2.89e-166
+LG+R3            -67164.715  134419.429 - 6.09e-196  134421.659 - 2.27e-195  134669.233 - 1.77e-170
+LG+I+R3          -67164.558  134421.115 - 2.62e-196  134423.445 - 9.29e-196  134676.470 - 4.75e-172
+LG+G4            -67190.450  134464.900 - 8.14e-206  134466.842 - 3.5e-205  134698.050 - 9.78e-177
+LG+I+G4          -67189.337  134464.673 - 9.12e-206  134466.709 - 3.75e-205  134703.374 - 6.83e-178
+Q.pfam+R4        -67182.218  134458.436 - 2.06e-204  134460.868 - 6.95e-204  134719.341 - 2.33e-181
+Q.pfam+I+R4      -67182.049  134460.099 - 8.98e-205  134462.636 - 2.87e-204  134726.556 - 6.32e-183
+Q.insect+R4      -67210.534  134515.067 - 1.04e-216  134517.500 - 3.5e-216  134775.973 - 1.17e-193
+Q.insect+I+R4    -67210.505  134517.011 - 3.93e-217  134519.548 - 1.26e-216  134783.468 - 2.77e-195
+Q.yeast+R4       -67219.090  134532.180 -   2e-220  134534.613 - 6.74e-220  134793.086 - 2.26e-197
+Q.yeast+I+R4     -67219.191  134534.383 - 6.65e-221  134536.920 - 2.13e-220  134800.839 - 4.68e-199
+Blosum62+F+R4    -67182.543  134497.087 - 8.34e-213  134501.904 - 8.53e-213  134863.465 - 1.18e-212
+Blosum62+F+I+R4  -67182.552  134499.104 - 3.04e-213  134504.069 - 2.89e-213  134871.033 - 2.68e-214
+WAG+R4           -67265.320  134624.640 - 1.67e-240  134627.072 - 5.64e-240  134885.546 - 1.89e-217
+WAG+I+R4         -67264.568  134625.136 - 1.31e-240  134627.673 - 4.17e-240  134891.593 - 9.18e-219
+PMB+F+R4         -67240.685  134613.370 - 4.69e-238  134618.187 - 4.79e-238  134979.748 - 6.61e-238
+PMB+F+I+R4       -67240.675  134615.350 - 1.74e-238  134620.316 - 1.65e-238  134987.280 - 1.53e-239
+LG+I+R2          -67358.350  134804.699 - 1.33e-279  134806.830 - 5.21e-279  135048.951 - 6.21e-253
+LG+R2            -67365.011  134816.021 - 4.63e-282  134818.057 - 1.9e-281  135054.722 - 3.47e-254
+VT+R4            -67431.308  134956.616 - 1.37e-312  134959.048 - 4.61e-312  135217.521 - 1.54e-289
+VT+I+R4          -67431.313  134958.627 -   5e-313  134961.164 - 1.6e-312  135225.084 - 3.52e-291
+JTTDCMut+F+R4    -67378.372  134888.745 - 7.48e-298  134893.562 - 7.65e-298  135255.123 - 1.06e-297
+JTTDCMut+F+I+R4  -67378.132  134890.263 - 3.5e-298  134895.229 - 3.32e-298  135262.193 - 3.08e-299
+JTT+F+R4         -67383.571  134899.142 - 4.13e-300  134903.959 - 4.23e-300  135265.520 - 5.83e-300
+JTT+F+I+R4       -67383.258  134900.517 - 2.08e-300  134905.482 - 1.97e-300  135272.446 - 1.83e-301
+Blosum62+R4      -67487.502  135069.003 -        0  135071.436 -        0  135329.909 - 6.08e-314
+DCMut+F+R4       -67416.677  134965.354 - 1.73e-314  134970.171 - 1.77e-314  135331.733 - 2.44e-314
+Dayhoff+F+R4     -67417.402  134966.804 - 8.38e-315  134971.621 - 8.57e-315  135333.183 - 1.18e-314
+Blosum62+I+R4    -67487.530  135071.061 -        0  135073.598 -        0  135337.518 - 1.35e-315
+DCMut+F+I+R4     -67416.585  134967.169 - 6.98e-315  134972.135 - 6.63e-315  135339.099 - 6.14e-316
+Dayhoff+F+I+R4   -67417.210  134968.420 - 3.74e-315  134973.385 - 3.55e-315  135340.349 - 3.29e-316
+cpREV+F+R4       -67439.072  135010.145 - 4.94e-324  135014.962 - 4.94e-324  135376.523 - 4.94e-324
+cpREV+F+I+R4     -67438.989  135011.978 -        0  135016.944 -        0  135383.908 -        0
+PMB+R4           -67526.870  135147.740 -        0  135150.173 -        0  135408.646 -        0
+PMB+I+R4         -67526.817  135149.634 -        0  135152.171 -        0  135416.091 -        0
+mtInv+F+R4       -67474.785  135081.570 -        0  135086.387 -        0  135447.948 -        0
+mtInv+F+I+R4     -67475.134  135084.268 -        0  135089.234 -        0  135456.198 -        0
+Q.plant+F+R4     -67571.402  135274.805 -        0  135279.622 -        0  135641.183 -        0
+mtZOA+F+R4       -67574.241  135280.481 -        0  135285.298 -        0  135646.860 -        0
+Q.plant+F+I+R4   -67571.257  135276.514 -        0  135281.480 -        0  135648.444 -        0
+mtZOA+F+I+R4     -67575.062  135284.125 -        0  135289.091 -        0  135656.054 -        0
+rtREV+R4         -67786.465  135666.930 -        0  135669.363 -        0  135927.836 -        0
+rtREV+I+R4       -67786.504  135669.008 -        0  135671.545 -        0  135935.464 -        0
+JTTDCMut+R4      -67850.688  135795.377 -        0  135797.809 -        0  136056.283 -        0
+JTTDCMut+I+R4    -67850.441  135796.881 -        0  135799.419 -        0  136063.338 -        0
+JTT+R4           -67864.278  135822.556 -        0  135824.989 -        0  136083.462 -        0
+JTT+I+R4         -67863.598  135823.195 -        0  135825.733 -        0  136089.652 -        0
+cpREV+R4         -67913.393  135920.786 -        0  135923.218 -        0  136181.691 -        0
+cpREV+I+R4       -67913.762  135923.524 -        0  135926.062 -        0  136189.981 -        0
+Dayhoff+R4       -67960.581  136015.163 -        0  136017.595 -        0  136276.069 -        0
+DCMut+R4         -67961.594  136017.187 -        0  136019.620 -        0  136278.093 -        0
+Dayhoff+I+R4     -67960.237  136016.474 -        0  136019.011 -        0  136282.931 -        0
+DCMut+I+R4       -67960.452  136016.904 -        0  136019.441 -        0  136283.361 -        0
+mtMet+F+R4       -67917.865  135967.730 -        0  135972.547 -        0  136334.109 -        0
+mtMet+F+I+R4     -67918.009  135970.018 -        0  135974.984 -        0  136341.947 -        0
+Q.plant+R4       -68046.014  136186.028 -        0  136188.460 -        0  136446.934 -        0
+Q.plant+I+R4     -68045.732  136187.463 -        0  136190.001 -        0  136453.920 -        0
+mtREV+F+R4       -68023.581  136179.163 -        0  136183.980 -        0  136545.541 -        0
+mtREV+F+I+R4     -68023.875  136181.750 -        0  136186.716 -        0  136553.680 -        0
+mtART+F+R4       -68061.329  136254.659 -        0  136259.476 -        0  136621.037 -        0
+mtART+F+I+R4     -68063.728  136261.456 -        0  136266.422 -        0  136633.386 -        0
+Q.mammal+F+R4    -68081.167  136294.334 -        0  136299.151 -        0  136660.712 -        0
+Q.mammal+F+I+R4  -68080.917  136295.835 -        0  136300.801 -        0  136667.764 -        0
+FLU+F+R4         -68278.384  136688.767 -        0  136693.584 -        0  137055.146 -        0
+FLU+F+I+R4       -68276.897  136687.794 -        0  136692.760 -        0  137059.723 -        0
+LG+I             -68530.957  137145.914 -        0  137147.856 -        0  137379.064 -        0
+LG               -68574.869  137231.737 -        0  137233.588 -        0  137459.336 -        0
+HIVb+F+R4        -68554.184  137240.368 -        0  137245.185 -        0  137606.746 -        0
+HIVb+F+I+R4      -68552.894  137239.787 -        0  137244.753 -        0  137611.717 -        0
+Q.bird+F+R4      -68571.516  137275.032 -        0  137279.849 -        0  137641.410 -        0
+Q.bird+F+I+R4    -68571.126  137276.253 -        0  137281.219 -        0  137648.183 -        0
+FLU+R4           -68681.330  137456.660 -        0  137459.093 -        0  137717.566 -        0
+FLU+I+R4         -68679.043  137454.086 -        0  137456.623 -        0  137720.543 -        0
+Q.mammal+R4      -68770.396  137634.791 -        0  137637.224 -        0  137895.697 -        0
+Q.mammal+I+R4    -68770.165  137636.330 -        0  137638.868 -        0  137902.787 -        0
+mtVer+F+R4       -68872.737  137877.474 -        0  137882.291 -        0  138243.853 -        0
+mtVer+F+I+R4     -68875.513  137885.027 -        0  137889.992 -        0  138256.956 -        0
+Q.bird+R4        -69245.600  138585.201 -        0  138587.633 -        0  138846.107 -        0
+Q.bird+I+R4      -69245.090  138586.179 -        0  138588.717 -        0  138852.636 -        0
+mtMAM+F+R4       -69186.879  138505.757 -        0  138510.574 -        0  138872.136 -        0
+mtMAM+F+I+R4     -69188.236  138510.472 -        0  138515.437 -        0  138882.401 -        0
+HIVb+R4          -69358.248  138810.497 -        0  138812.929 -        0  139071.403 -        0
+HIVb+I+R4        -69358.270  138812.539 -        0  138815.076 -        0  139078.996 -        0
+mtZOA+R4         -69592.192  139278.384 -        0  139280.817 -        0  139539.290 -        0
+mtZOA+I+R4       -69590.976  139277.951 -        0  139280.488 -        0  139544.408 -        0
+FLAVI+F+R4       -69663.521  139459.043 -        0  139463.860 -        0  139825.421 -        0
+FLAVI+F+I+R4     -69663.498  139460.996 -        0  139465.961 -        0  139832.925 -        0
+HIVw+F+R4        -70112.028  140356.057 -        0  140360.874 -        0  140722.435 -        0
+FLAVI+I+R4       -70181.356  140458.711 -        0  140461.248 -        0  140725.168 -        0
+HIVw+F+I+R4      -70110.787  140355.574 -        0  140360.540 -        0  140727.504 -        0
+FLAVI+R4         -70186.542  140467.083 -        0  140469.516 -        0  140727.989 -        0
+mtMet+R4         -70222.986  140539.973 -        0  140542.405 -        0  140800.879 -        0
+mtMet+I+R4       -70221.413  140538.827 -        0  140541.364 -        0  140805.284 -        0
+mtREV+R4         -70316.825  140727.650 -        0  140730.083 -        0  140988.556 -        0
+mtREV+I+R4       -70316.562  140729.124 -        0  140731.661 -        0  140995.581 -        0
+mtInv+R4         -70618.396  141330.792 -        0  141333.224 -        0  141591.697 -        0
+mtInv+I+R4       -70617.845  141331.690 -        0  141334.227 -        0  141598.147 -        0
+mtART+R4         -70733.160  141560.320 -        0  141562.753 -        0  141821.226 -        0
+mtART+I+R4       -70734.160  141564.320 -        0  141566.857 -        0  141830.776 -        0
+mtVer+I+R4       -70997.036  142090.072 -        0  142092.609 -        0  142356.529 -        0
+mtVer+R4         -71002.514  142099.027 -        0  142101.459 -        0  142359.933 -        0
+mtMAM+I+R4       -71616.784  143329.569 -        0  143332.106 -        0  143596.026 -        0
+mtMAM+R4         -71627.082  143348.163 -        0  143350.596 -        0  143609.069 -        0
+HIVw+I+R4        -71639.101  143374.202 -        0  143376.739 -        0  143640.659 -        0
+HIVw+R4          -71647.207  143388.414 -        0  143390.846 -        0  143649.320 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.pfam+F+R4
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0565
+  pi(R) = 0.0473
+  pi(N) = 0.0470
+  pi(D) = 0.0515
+  pi(C) = 0.0203
+  pi(Q) = 0.0325
+  pi(E) = 0.0634
+  pi(G) = 0.0427
+  pi(H) = 0.0197
+  pi(I) = 0.0701
+  pi(L) = 0.0969
+  pi(K) = 0.0834
+  pi(M) = 0.0286
+  pi(F) = 0.0522
+  pi(P) = 0.0276
+  pi(S) = 0.0870
+  pi(T) = 0.0738
+  pi(W) = 0.0095
+  pi(Y) = 0.0339
+  pi(V) = 0.0560
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.1083,0.0994) (0.3369,0.4794) (0.3906,1.1033) (0.1641,2.4175)
+
+ Category  Relative_rate  Proportion
+  1         0.0994         0.1083
+  2         0.4794         0.3369
+  3         1.1033         0.3906
+  4         2.4175         0.1641
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -66693.2282 (s.e. 581.4251)
+Unconstrained log-likelihood (without tree): -14295.2051
+Number of free parameters (#branches + #model parameters): 66
+Akaike information criterion (AIC) score: 133518.4564
+Corrected Akaike information criterion (AICc) score: 133523.2734
+Bayesian information criterion (BIC) score: 133884.8347
+
+Total tree length (sum of branch lengths): 30.6822
+Sum of internal branch lengths: 6.0313 (19.6572% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0005) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+WARNING: 1 too long branches (>9.8000) should be treated with caution!
+NOTE: Tree is UNROOTED although outgroup taxon 'Brassica_campestris_chinensis_coguvirus1_Coguvirus' is drawn at root
+Numbers in parentheses are  standard bootstrap support (%)
+
++--Brassica_campestris_chinensis_coguvirus1_Coguvirus
+|
+|        +--Citrus_concave_gum-associated_virus_Coguvirus
+|     +--| (97)
+|     |  +--Citrus_virusA_Coguvirus
+|  +--| (48)
+|  |  +--Watermelon_crinkle_leaf-associated_virus1_Coguvirus
++--| (60)
+|  |  +--Watermelon_crinkle_leaf-associated_virus2_Coguvirus
+|  +--| (92)
+|     +--Yunnan_Paris_negative-stranded_virus_Coguvirus
+|
+|  +--Grapevine_associated_cogu-like_virus1_Coguvirus
++--| (87)
+   |        +--Entoleuca_phenui-like_virus1_Entovirus
+   |     +--| (47)
+   |     |  |           +--Apple_rubbery_wood_virus1_Rubodvirus
+   |     |  |        +--| (72)
+   |     |  |        |  |  +--Apple_rubbery_wood_virus2_Rubodvirus
+   |     |  |        |  +--| (100)
+   |     |  |        |     +--Grapevine_Garan_dmak_virus_Rubodvirus
+   |     |  |     +--| (100)
+   |     |  |     |  +--Grapevine_Muscat_rose_virus_Rubodvirus
+   |     |  |  +--| (100)
+   |     |  |  |  |  +--Raspberry_rubodvirus1_Rubodvirus
+   |     |  |  |  +--| (97)
+   |     |  |  |     +--Ma_phenui-like_virus
+   |     |  +--| (59)
+   |     |     |    +--European_wheat_striate_mosaic_virus_Tenuivirus
+   |     |     +----| (98)
+   |     |          +--Rice_hoja_blanca_virus_Tenuivirus
+   |  +--| (51)
+   |  |  +--Lentinula_edodes_virus2_Lentinuvirus
+   +--| (87)
+      |        +--Grapevine_associated_cogu-like_virus2_Laulavirus
+      |     +--| (92)
+      |     |  +--Grapevine_associated_cogu-like_virus3_Laulavirus
+      |  +--| (83)
+      |  |  +--Laurel_Lake_virus_Laulavirus
+      +--| (38)
+         |  +--Grapevine_associated_cogu-like_virus4_Laulavirus
+         +**| (7)
+            +-------------------------------------------------------Mulberry_vein_banding_virus_Tospovirus
+
+Tree in newick format:
+
+(Brassica_campestris_chinensis_coguvirus1_Coguvirus:0.3688390430,(((Citrus_concave_gum-associated_virus_Coguvirus:0.1197206514,Citrus_virusA_Coguvirus:0.1336626940)97:0.1534205809,Watermelon_crinkle_leaf-associated_virus1_Coguvirus:0.2593339717)48:0.0422444573,(Watermelon_crinkle_leaf-associated_virus2_Coguvirus:0.1851424928,Yunnan_Paris_negative-stranded_virus_Coguvirus:0.1831920566)92:0.1647106121)60:0.0883608721,(Grapevine_associated_cogu-like_virus1_Coguvirus:0.7977373941,(((Entoleuca_phenui-like_virus1_Entovirus:1.1612309647,((((Apple_rubbery_wood_virus1_Rubodvirus:0.2619855139,(Apple_rubbery_wood_virus2_Rubodvirus:0.1273679307,Grapevine_Garan_dmak_virus_Rubodvirus:0.1520602281)100:0.0934991071)72:0.0684140710,Grapevine_Muscat_rose_virus_Rubodvirus:0.2689743771)100:0.3250844294,(Raspberry_rubodvirus1_Rubodvirus:0.5675352450,Ma_phenui-like_virus:0.5613917065)97:0.1535985806)100:1.1784975717,(European_wheat_striate_mosaic_virus_Tenuivirus:0.3087129224,Rice_hoja_blanca_virus_Tenuivirus:0.3403677699)98:1.5818260308)59:0.4005758255)47:0.1739794626,Lentinula_edodes_virus2_Lentinuvirus:1.1905453751)51:0.1625652293,(((Grapevine_associated_cogu-like_virus2_Laulavirus:0.0994687666,Grapevine_associated_cogu-like_virus3_Laulavirus:0.0954941810)92:0.1014049306,Laurel_Lake_virus_Laulavirus:0.2398651397)83:0.1347610847,(Grapevine_associated_cogu-like_virus4_Laulavirus:0.1903563239,Mulberry_vein_banding_virus_Tospovirus:17.0379360242)7:0.0000022410)38:0.6778553868)87:0.2245824645)87:0.3058854067);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -66710.105160
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Brassica_campestris_chinensis_coguvirus1_Coguvirus
+|
+|        +--Citrus_concave_gum-associated_virus_Coguvirus
+|     +--| (97)
+|     |  +--Citrus_virusA_Coguvirus
+|  +--| (48)
+|  |  +--Watermelon_crinkle_leaf-associated_virus1_Coguvirus
++--| (60)
+|  |  +--Watermelon_crinkle_leaf-associated_virus2_Coguvirus
+|  +--| (92)
+|     +--Yunnan_Paris_negative-stranded_virus_Coguvirus
+|
+|  +---Grapevine_associated_cogu-like_virus1_Coguvirus
++--| (87)
+   |           +-----Entoleuca_phenui-like_virus1_Entovirus
+   |        +--| (47)
+   |        |  |              +--Apple_rubbery_wood_virus1_Rubodvirus
+   |        |  |           +--| (72)
+   |        |  |           |  |  +--Apple_rubbery_wood_virus2_Rubodvirus
+   |        |  |           |  +--| (100)
+   |        |  |           |     +--Grapevine_Garan_dmak_virus_Rubodvirus
+   |        |  |        +--| (100)
+   |        |  |        |  +--Grapevine_Muscat_rose_virus_Rubodvirus
+   |        |  |  +-----| (100)
+   |        |  |  |     |  +--Raspberry_rubodvirus1_Rubodvirus
+   |        |  |  |     +--| (97)
+   |        |  |  |        +--Ma_phenui-like_virus
+   |        |  +--| (59)
+   |        |     |       +--European_wheat_striate_mosaic_virus_Tenuivirus
+   |        |     +-------| (98)
+   |        |             +--Rice_hoja_blanca_virus_Tenuivirus
+   |     +--| (51)
+   |     |  +-----Lentinula_edodes_virus2_Lentinuvirus
+   |  +--| (49)
+   |  |  +-------------------------------------------------------Mulberry_vein_banding_virus_Tospovirus
+   +--| (87)
+      |        +--Grapevine_associated_cogu-like_virus2_Laulavirus
+      |     +--| (92)
+      |     |  +--Grapevine_associated_cogu-like_virus3_Laulavirus
+      |  +--| (83)
+      |  |  +--Laurel_Lake_virus_Laulavirus
+      +--| (65)
+         +--Grapevine_associated_cogu-like_virus4_Laulavirus
+
+
+Consensus tree in newick format: 
+
+(Brassica_campestris_chinensis_coguvirus1_Coguvirus:0.3636786825,(((Citrus_concave_gum-associated_virus_Coguvirus:0.1182283433,Citrus_virusA_Coguvirus:0.1319758222)97:0.1513806020,Watermelon_crinkle_leaf-associated_virus1_Coguvirus:0.2558854463)48:0.0417776253,(Watermelon_crinkle_leaf-associated_virus2_Coguvirus:0.1827734948,Yunnan_Paris_negative-stranded_virus_Coguvirus:0.1807561540)92:0.1624516133)60:0.0873535191,(Grapevine_associated_cogu-like_virus1_Coguvirus:0.7843927478,((((Entoleuca_phenui-like_virus1_Entovirus:1.1401051605,((((Apple_rubbery_wood_virus1_Rubodvirus:0.2584236130,(Apple_rubbery_wood_virus2_Rubodvirus:0.1257963861,Grapevine_Garan_dmak_virus_Rubodvirus:0.1500604529)100:0.0922442065)72:0.0674700922,Grapevine_Muscat_rose_virus_Rubodvirus:0.2653924878)100:0.3201912897,(Raspberry_rubodvirus1_Rubodvirus:0.5585920753,Ma_phenui-like_virus:0.5522313524)97:0.1513849624)100:1.1528077259,(European_wheat_striate_mosaic_virus_Tenuivirus:0.3041710224,Rice_hoja_blanca_virus_Tenuivirus:0.3352618841)98:1.5445581245)59:0.3877797261)47:0.1710880162,Lentinula_edodes_virus2_Lentinuvirus:1.1703707479)51:0.1359904351,Mulberry_vein_banding_virus_Tospovirus:9.9999981420)49:0.0236729162,(((Grapevine_associated_cogu-like_virus2_Laulavirus:0.0982883502,Grapevine_associated_cogu-like_virus3_Laulavirus:0.0942495750)92:0.1001586149,Laurel_Lake_virus_Laulavirus:0.2366247974)83:0.1325922382,Grapevine_associated_cogu-like_virus4_Laulavirus:0.1880786976)65:0.6690111185)87:0.2195392794)87:0.3015678148);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t virus_combine.mafft.trimal.fasta.treefile -m "Q.pfam+F+R4{0.108345,0.0993778,0.336921,0.479402,0.390612,1.10326,0.164122,2.41751}" --length 1903
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s virus_combine.mafft.trimal.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s virus_combine.mafft.trimal.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat May 10 11:34:42 2025
+Total CPU time used: 607917.0359 seconds (168h:51m:57s)
+Total wall-clock time used: 34500.60953 seconds (9h:35m:0s)
+
